@@ -1,0 +1,18 @@
+//https://blog.csdn.net/alen_xiaoxin/article/details/61921281
+// composer require fxp/composer-asset-plugin 1.4
+创建RBAC，封装小部件，封装服务层，封装js函数，封装弹框。
+
+1
+sd_customers(客户表)表结构设计：
+    id,name,nickname,avatar,sex,password,mobile,access_token,openid,unionid,province,city,country,create_at,last_login_at
+sd_customer customer副表
+    customer_id,status,role,mobile,level_1,level_2,service_id,store_id,is_transfer,score,total_money,money,from_type,rate,sale_price_ratio,order_count,order_total_money,refund_money,
+
+
+2
+sd_stores(店铺表)表结构设计：
+    id,title,keeper,address,province,city,country,create_at
+
+3
+sd_user(员工用户)表结构设计:
+    id,name,password,status,type,role,create_at

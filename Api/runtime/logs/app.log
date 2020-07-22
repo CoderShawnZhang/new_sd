@@ -1,0 +1,71 @@
+2020-05-16 15:48:26 [172.16.238.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: base/ in /var/www/dengbei/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/dengbei/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#1 /var/www/dengbei/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#2 /var/www/dengbei/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/dengbei/Api/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/dengbei/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/dengbei/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/dengbei/Api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2020-05-16 15:48:26 [172.16.238.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi'
+    'HOSTNAME' => '4f924eb2cdaa'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_IDE_CONFIG' => 'serverName=dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2'
+    'PHP_MD5' => ''
+    'PHP_VERSION' => '7.1.32'
+    'GPG_KEYS' => 'A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2'
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.1.32.tar.xz.asc/from/this/mirror'
+    'PHP_URL' => 'https://www.php.net/get/php-7.1.32.tar.xz/from/this/mirror'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www'
+    'PHP_SHA256' => '7f38b5bdaae3184d325a8c70e86c010afcc33651d15faafe277a0db6d2ea2741'
+    'USER' => 'www-data'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'dengbeiapi.local.alwooo.com'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.6.0'
+    'HTTP_POSTMAN_TOKEN' => 'c8516686-c74b-42d1-b04b-a487f243581f'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'dengbeiapi.local.alwooo.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.16.238.6'
+    'REMOTE_PORT' => '35920'
+    'REMOTE_ADDR' => '172.16.238.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/dengbei/Api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/var/www/dengbei/Api/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1589615306.2274
+    'REQUEST_TIME' => 1589615306
+]

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="backend\tests.unit" tests="1" assertions="0" errors="0" failures="0" skipped="0" time="0.109903">
+    <testcase name="testSomeFeature" class="backend\tests\unit\aTest" file="/Users/zhanghongbo/develop/docker/dev/var/data/www/dengbei/backend/tests/unit/aTest.php" assertions="0" time="0.109903"/>
+  </testsuite>
+</testsuites>

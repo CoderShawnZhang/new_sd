@@ -1,0 +1,116 @@
+iframe {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+.layui-nav-item a{
+    text-decoration:none
+}
+.layui-tab-item.layui-show{
+    -webkit-animation: moveTop 1s;
+    -webkit-animation-fill-mode: both;
+    position: relative;
+    height: 100%;
+}
+.layui-tab{
+    margin:0;
+}
+.layui-tab-content{
+    top: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.layui-layout-admin .layui-logo {
+    color:#63B8FF;
+}
+
+.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover {
+    background-color: #63B8FF;
+    color: #fff;
+}
+
+
+/*选显卡选中的背景色*/
+
+.layui-tab-title .layui-this {
+    background-color: #63B8FF;
+    color: #fff;
+}
+
+
+
+/*管理员下来样式*/
+.top_admin_nav{
+    top:60px;
+}
+.top_admin_nav dd{
+    background-color:#fff;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.top_admin_nav dd:hover{
+    /*background-color:#63B8FF*/
+}
+.top_admin_nav dd a{
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+
+
+/*.layui-nav .layui-nav-child a:hover,.layui-nav .layui-nav-child dd.layui-this a:hover{background-color:#63B8FF;color:#fff;}*/
+
+.layui-nav-item.layui-nav-itemed{ background-color:#2B2E37 !important;}
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{background-color:#63B8FF;}
+/*.layui-nav-itemed:before{ width:5px; height:100%; background-color:#ff9900; position:absolute; content:''; left:0; top:0;}*/
+
+.layui-nav-tree .layui-nav-bar{    background-color: #63B8FF;}
+.topLevelMenus .layui-nav-bar:hover:after{
+    background-color: #63B8FF;
+}
+.topLevelMenus{
+    margin-left:60px;
+    padding-left: 0;
+}
+
+.header_switch{
+    color: #fff;
+    margin-left: 220px;
+    line-height: 60px;
+    margin-right: 20px;
+    width: 33px;
+    cursor:pointer;
+}
+.aaa {
+    cursor: pointer;
+}
+
+/*左侧导航*/
+.hideMenu:hover,.showMenu:hover{ color:#fff; }
+.showMenu.layui-layout-admin .layui-side{ left:-200px; }
+.showMenu .layui-body,.showMenu .layui-footer{ left:0; }
+
+.hideMenu {
+    line-height: 60px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #63B8FF;
+    margin-left: 220px;
+}
+}
+.seraph {
+    font-size: 16px !important;
+}
+
+.left_icon{
+    margin-left:5px;
+}
