@@ -16,7 +16,9 @@ return [
     'modules' => [
         'admin' => [
             'class' => 'mdm\admin\Module',
-            'layout' => 'left-menu',
+//            'mainLayout' => '@mdm/admin/views/layouts_bak/main.php',
+            'layout' => '@backend/views/rbac/layouts/left-menu.php',
+            'mainLayout' => '@backend/views/rbac/layouts/main.php',
             'controllerMap' => [
                 'assignment' => [
                     'class' => 'mdm\admin\controllers\AssignmentController',
