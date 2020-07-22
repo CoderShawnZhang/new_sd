@@ -72,7 +72,7 @@ class SiteController extends Controller
     {
         error_reporting(1);
 
-// 项目仓库文件夹路径
+// 项目仓库文件夹路径1111
         $dir =  '/data/wwwroot/dengbei';
 
 
