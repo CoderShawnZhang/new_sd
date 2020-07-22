@@ -16,25 +16,24 @@ return [
     'modules' => [
         'admin' => [
             'class' => 'mdm\admin\Module',
-//            'mainLayout' => '@mdm/admin/views/layouts_bak/main.php',
             'layout' => '@backend/views/rbac/layouts/left-menu.php',
             'mainLayout' => '@backend/views/rbac/layouts/main.php',
             'controllerMap' => [
-                'assignment' => [
-                    'class' => 'mdm\admin\controllers\AssignmentController',
-                    'userClassName' => 'app\models\User',
-                    'idField' => 'id',
-                    'usernameField' => 'name',
-                    'extraColumns' => [
-                        [
-                            'attribute' => 'mobile',
-                            'label' => '手机号',
-                            'value' => function ($model, $key, $index, $column) {
-                                return $model->mobile;
-                            },
-                        ],
-                    ],
-                ]
+//                'menu' => [
+//                    'class' => 'mdm\admin\controllers\AssignmentController',
+//                    'userClassName' => 'Service\ServiceModules\ServiceUser\Models\Ar\UserAr',
+//                    'idField' => 'id',
+//                    'usernameField' => 'name',
+//                    'extraColumns' => [
+//                        [
+//                            'attribute' => 'mobile',
+//                            'label' => '手机号',
+//                            'value' => function ($model, $key, $index, $column) {
+//                                return $model->mobile;
+//                            },
+//                        ],
+//                    ],
+//                ]
             ]
         ],
         //商品模块-后期对接商品库组件

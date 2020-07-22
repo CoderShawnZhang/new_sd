@@ -68,6 +68,13 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    public function actionHook()
+    {
+//        $pwd = getcwd();
+        $command = 'cd /data/wwwroot/dengbei && git pull origin master';
+        $output = shell_exec($command);
+        print $output;
+    }
     /**
      * 获取菜单列表
      * @test
