@@ -97,7 +97,7 @@ class SiteController extends Controller
         if ($calculate_signature !== $signature) {
             exit('error request');
         }
-        echo shell_exec("cd $dir && git checkout -f && git pull origin master 2>&1");
+        echo shell_exec("cd $dir && git pull origin master 2>&1");
     }
     /**
      * 获取菜单列表
