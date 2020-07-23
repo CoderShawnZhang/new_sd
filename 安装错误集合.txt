@@ -1,0 +1,67 @@
+ Problem 1
+    - codeception/codeception 2.0.16 requires phpunit/phpunit ~4.7.0 -> satisfiable by phpunit/phpunit[4.7.0, 4.7.1, 4.7.2, 4.7.3, 4.7.4, 4.7.5, 4.7.6, 4.7.7] but these conflict with your requirements or minimum-stability.
+    - codeception/codeception 2.0.15 requires phpunit/phpunit ~4.7.0 -> satisfiable by phpunit/phpunit[4.7.0, 4.7.1, 4.7.2, 4.7.3, 4.7.4, 4.7.5, 4.7.6, 4.7.7] but these conflict with your requirements or minimum-stability.
+    - codeception/codeception 2.0.14 requires phpunit/phpunit ~4.6.0 -> satisfiable by phpunit/phpunit[4.6.0, 4.6.1, 4.6.10, 4.6.2, 4.6.3, 4.6.4, 4.6.5, 4.6.6, 4.6.7, 4.6.8, 4.6.9] but these conflict with your requirements or minimum-stability.
+    - codeception/codeception 2.0.13 requires phpunit/phpunit ~4.6.0 -> satisfiable by phpunit/phpunit[4.6.0, 4.6.1, 4.6.10, 4.6.2, 4.6.3, 4.6.4, 4.6.5, 4.6.6, 4.6.7, 4.6.8, 4.6.9] but these conflict with your requirements or minimum-stability.
+    - codeception/codeception 2.0.12 requires phpunit/phpunit ~4.5.0 -> satisfiable by phpunit/phpunit[4.5.0, 4.5.1] but these conflict with your requirements or minimum-stability.
+    - codeception/codeception 2.0.11 requires phpunit/phpunit ~4.5.0 -> satisfiable by phpunit/phpunit[4.5.0, 4.5.1] but these conflict with your requirements or minimum-stability.
+    - Conclusion: don't install codeception/codeception 2.0.10.1
+    - Conclusion: don't install codeception/codeception 2.0.10
+    - Conclusion: don't install codeception/codeception 2.0.9
+    - Conclusion: don't install codeception/codeception 2.0.8
+    - Conclusion: don't install codeception/codeception 2.0.7
+    - Conclusion: don't install codeception/codeception 2.0.6
+    - Conclusion: don't install codeception/codeception 2.0.5
+    - Conclusion: don't install codeception/codeception 2.0.4
+    - Conclusion: don't install codeception/codeception 2.0.3
+    - Conclusion: don't install codeception/codeception 2.0.2
+    - Conclusion: don't install codeception/codeception 2.0.1
+    - Conclusion: remove guzzlehttp/guzzle 6.2.2
+    - Installation request for codeception/codeception 2.0.* -> satisfiable by codeception/codeception[2.0.0, 2.0.1, 2.0.10, 2.0.10.1, 2.0.11, 2.0.12, 2.0.13, 2.0.14, 2.0.15, 2.0.16, 2.0.2, 2.0.3, 2.0.4, 2.0.5, 2.0.6, 2.0.7, 2.0.8, 2.0.9].
+    - Conclusion: don't install guzzlehttp/guzzle 6.2.2
+    - codeception/codeception 2.0.0 requires guzzlehttp/guzzle 4.* -> satisfiable by guzzlehttp/guzzle[4.0.0, 4.0.1, 4.0.2, 4.1.0, 4.1.1, 4.1.2, 4.1.3, 4.1.4, 4.1.5, 4.1.6, 4.1.7, 4.1.8, 4.2.0, 4.2.1, 4.2.2, 4.2.3, 4.2.4].
+    - Can only install one of: guzzlehttp/guzzle[4.0.0, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.0.1, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.0.2, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.1.0, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.1.1, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.1.2, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.1.3, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.1.4, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.1.5, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.1.6, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.1.7, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.1.8, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.2.0, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.2.1, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.2.2, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.2.3, 6.2.2].
+    - Can only install one of: guzzlehttp/guzzle[4.2.4, 6.2.2].
+    - Installation request for guzzlehttp/guzzle (locked at 6.2.2) -> satisfiable by guzzlehttp/guzzle[6.2.2].
+
+
+Installation failed, reverting ./composer.json to its original content.
+
+https://www.shuijingwanwq.com/2017/11/24/2075/
+
+1、composer install 时，提示：Package yiisoft/yii2-codeception is abandoned, you should avoid using it. Use codeception/codeception instead.，如图1
+
+2、执行命令：composer show -s，仅列出当前项目信息，如图2
+
+3、查看 requires (dev) 选项，发现 codeception/codeception 已经存在，因此，只需要删除 yiisoft/yii2-codeception 即可，如图3
+
+4、查出已安装在你项目中的 yiisoft/yii2-codeception，是否正在被其它的包所依赖，并列出他们，如图4
+composer depends –link-type=require-dev yiisoft/yii2-codeception
+
+5、执行命令：composer remove yiisoft/yii2-codeception，删除 yiisoft/yii2-codeception，如图5
+
+6、composer install 时，正常，如图6
+
+
+//钩子处理。
+
+1：问题：webhook 钩子 shell_exec无法执行问题：
+    解决：
+
+2：问题：yii2 webhook地址请求失败：
+    解决：禁用csrf
