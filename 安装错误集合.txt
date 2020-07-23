@@ -60,7 +60,7 @@ composer depends –link-type=require-dev yiisoft/yii2-codeception
 
 //钩子处理。
 
-1：问题：webhook 钩子 shell_exec无法执行问题：
+1：问题：webhook 钩子 shell_exec无法执行问题 sh: php: command not found：
     解决：
 
 2：问题：yii2 webhook地址请求失败：
