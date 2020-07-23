@@ -64,7 +64,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-//        echo phpinfo();die;1111111
+//        echo phpinfo();die;111111111222
         return $this->render('index');
     }
 
