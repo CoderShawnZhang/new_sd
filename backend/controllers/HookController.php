@@ -13,7 +13,7 @@ use yii\web\Controller;
 
 class HookController extends Controller
 {
-//    public $layout = false;
+    public $layout = false;
 
     public function actionHook()
     {
