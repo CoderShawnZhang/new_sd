@@ -41,9 +41,9 @@ $appAsset = AppAsset::register($this);
         <ul class="layui-nav layui-layout-left topLevelMenus">
             <li class="layui-nav-item" data-menu="1"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>搜灯网[2111]</a></li>
             <li class="layui-nav-item" data-menu="2"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>统计报表111</a></li>
-            <li class="layui-nav-item" data-menu="3"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>单据查询</a></li>
-            <li class="layui-nav-item" data-menu="4"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>定时任务</a></li>
-            <li class="layui-nav-item" data-menu="5"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>配置管理</a></li>
+            <li class="layui-nav-item" data-menu="3"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>单据查询1</a></li>
+            <li class="layui-nav-item" data-menu="4"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>定时任务2</a></li>
+            <li class="layui-nav-item" data-menu="5"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>配置管理2</a></li>
             <li class="layui-nav-item">
                 <a href="javascript:;"><i class="layui-icon layui-icon-website"></i>其它系统<span class="layui-nav-more"></span></a>
                 <dl class="layui-nav-child top_admin_nav">
