@@ -63,6 +63,7 @@ class HookController extends Controller
     public function actionInfo()
     {
        echo phpinfo();
+       echo 123;
     }
 
 //    private function base64UrlEncode($str)
