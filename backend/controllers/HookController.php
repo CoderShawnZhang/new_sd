@@ -50,6 +50,15 @@ class HookController extends Controller
         die("done " . date('Y-m-d H:i:s', time()));
     }
 
+    public function actionHook1()
+    {
+        exec("cd /data/wwwroot/dengbei && git pull origin master");
+    }
+    public function actionHook2()
+    {
+        shell_exec("cd /data/wwwroot/dengbei && git pull origin master");
+    }
+
 //    private function base64UrlEncode($str)
 //    {
 //        $find = array('+', '/');
