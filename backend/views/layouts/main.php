@@ -40,7 +40,7 @@ $appAsset = AppAsset::register($this);
         <!-- 头部区域（可配合layui已有的水平导航） -->
         <ul class="layui-nav layui-layout-left topLevelMenus">
             <li class="layui-nav-item" data-menu="1"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>搜灯网[2111]</a></li>
-            <li class="layui-nav-item" data-menu="2"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>统计报表</a></li>
+            <li class="layui-nav-item" data-menu="2"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>统计报表111</a></li>
             <li class="layui-nav-item" data-menu="3"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>单据查询</a></li>
             <li class="layui-nav-item" data-menu="4"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>定时任务</a></li>
             <li class="layui-nav-item" data-menu="5"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>配置管理</a></li>
