@@ -41,11 +41,11 @@ class HookController extends Controller
         $sha1 = hash_hmac("sha1",$json_post,$token);
 
         $calculate_signature = 'sha1='. $sha1;
-
+        echo shell_exec("cd $dir && git pull origin master");
 // 进行身份验证
         if ($calculate_signature !== $signature) {
             exit('error request');
         }
-        echo shell_exec("cd $dir && git pull origin master 2>&1");
+        echo shell_exec("cd $dir && git pull origin master");
     }
 }
