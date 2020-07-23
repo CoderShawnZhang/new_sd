@@ -62,8 +62,8 @@ class HookController extends Controller
     }
     public function actionHook3()
     {
-        $A = shell_exec("cd /data/wwwroot/dengbei && git pull origin master 2>&1");
-        $B = exec("cd /data/wwwroot/dengbei && git pull origin master 2>&1");
+        $A = shell_exec("cd /data/wwwroot/dengbei && git pull origin master > /data/wwwroot/dengbei/shell_exec.log 2>&1");
+        $B = exec("cd /data/wwwroot/dengbei && git pull origin master > /data/wwwroot/dengbei/exec.log 2>&1");
         var_dump($A);
         var_dump($B);
     }
