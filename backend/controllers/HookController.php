@@ -45,7 +45,7 @@ class HookController extends Controller
             header('HTTP/1.1 500 Internal Server Error');
             die('Local directory is missing');
         }
-        shell_exec("cd {$dir} && git pull origin master");
+        shell_exec("cd /data/wwwroot/dengbei && git pull origin master");
         die("done " . date('Y-m-d H:i:s', time()));
     }
 
