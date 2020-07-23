@@ -67,6 +67,13 @@ class HookController extends Controller
         var_dump($A);
         var_dump($B);
     }
+    public function actionHook4()
+    {
+        $A = shell_exec("php -v");
+        $B = exec("php -v");
+        var_dump($A);
+        var_dump($B);
+    }
     public function actionInfo()
     {
        echo phpinfo();
