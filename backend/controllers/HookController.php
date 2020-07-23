@@ -45,24 +45,25 @@ class HookController extends Controller
             header('HTTP/1.1 500 Internal Server Error');
             die('Local directory is missing');
         }
-//        shell_exec("cd /data/wwwroot/dengbei && git pull origin master");
-        exec("cd /data/wwwroot/dengbei && git pull origin master");
+        shell_exec("cd /data/wwwroot/dengbei && git pull origin master 2>&1");
+//        exec("cd /data/wwwroot/dengbei && git pull origin master");
         die("done " . date('Y-m-d H:i:s', time()));
     }
 
     public function actionHook1()
     {
-        $e = exec("php -v");
+        $e = exec("php -v  2>&1");
         var_dump($e);
     }
     public function actionHook2()
     {
-        $e = shell_exec("php -v");
+        $e = shell_exec("php -v 2>&1");
         var_dump($e);
     }
     public function actionInfo()
     {
        echo phpinfo();
+       echo 123;
     }
 
 //    private function base64UrlEncode($str)
