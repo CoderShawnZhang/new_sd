@@ -60,6 +60,10 @@ class HookController extends Controller
         $e = shell_exec("php -v");
         var_dump($e);
     }
+    public function actionInfo()
+    {
+       echo phpinfo();
+    }
 
 //    private function base64UrlEncode($str)
 //    {
