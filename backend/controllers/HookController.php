@@ -15,7 +15,7 @@ class HookController extends Controller
 {
     public $layout = false;
     public $enableCsrfValidation =false;
-    
+
     public function actionHook()
     {
         error_reporting(1);
