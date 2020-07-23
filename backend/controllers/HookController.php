@@ -28,7 +28,7 @@ class HookController extends Controller
         // 从请求头中获取签名
         $signature = $_SERVER['HTTP_X_CODING_SIGNATURE'];
 
-        die($signature);
+        exit("--".$signature);
         // 接收Coding post传递的参数
         $json_post = file_get_contents('php://input');
         // 进行签名解析
