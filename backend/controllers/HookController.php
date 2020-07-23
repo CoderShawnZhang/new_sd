@@ -14,7 +14,8 @@ use yii\web\Controller;
 class HookController extends Controller
 {
     public $layout = false;
-
+    public $enableCsrfValidation =false;
+    
     public function actionHook()
     {
         error_reporting(1);
@@ -34,6 +35,7 @@ class HookController extends Controller
 
 // 接收Coding post传递的参数
         $json_post = file_get_contents('php://input');
+
 
 // 进行签名解析
         $sha1 = hash_hmac("sha1",$json_post,$token);
