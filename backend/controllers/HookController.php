@@ -52,11 +52,13 @@ class HookController extends Controller
 
     public function actionHook1()
     {
-        exec("cd /data/wwwroot/dengbei && git pull origin master");
+        $e = exec("php -v");
+        var_dump($e);
     }
     public function actionHook2()
     {
-        shell_exec("cd /data/wwwroot/dengbei && git pull origin master");
+        $e = shell_exec("php -v");
+        var_dump($e);
     }
 
 //    private function base64UrlEncode($str)
