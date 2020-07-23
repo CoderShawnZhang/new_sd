@@ -60,6 +60,13 @@ class HookController extends Controller
         $e = shell_exec("php -v 2>&1");
         var_dump($e);
     }
+    public function actionHook3()
+    {
+        $A = shell_exec("cd /data/wwwroot/dengbei && git pull origin master 2>&1");
+        $B = exec("cd /data/wwwroot/dengbei && git pull origin master 2>&1");
+        var_dump($A);
+        var_dump($B);
+    }
     public function actionInfo()
     {
        echo phpinfo();
