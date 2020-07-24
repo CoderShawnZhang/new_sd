@@ -17,6 +17,7 @@ class InitMenuRawController extends BaseController
     {
         echo 123;
     }
+
     public function beforeAction($action)
     {
         $menu = MenuAr::deleteAll(['type_name' => 'rbac']);
@@ -25,6 +26,7 @@ class InitMenuRawController extends BaseController
 
     /**
      * 执行RBAC菜单初始化
+     * php yii ProjectInit/init-menu-raw/run
      */
     public function actionRun()
     {
