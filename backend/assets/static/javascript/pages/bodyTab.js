@@ -37,9 +37,36 @@ layui.define(["element"],function(exports){ //提示：模块也可以依赖其�
         }
         return html;
     };
+    obj.prototype.navBarTop = function(menuArray){
+        var html = '';
+        for (var parent in menuArray) {
+            var topTitle = menuArray[parent].name;
+            var topIcon = menuArray[parent].icon;
+            html +='<li class="layui-nav-item">';
+            html +='<a class="" href="javascript:;"><i class="layui-icon '+topIcon+'"></i><span class="left_icon">'+topTitle+'</span></a>';
+            if(menuArray[parent].children.length>0) {
+                html += '<dl class="layui-nav-child top_admin_nav">';
+                for (var child in menuArray[parent].children) {
+                    var childTitle = menuArray[parent].children[child].name;
+                    var childIcon = menuArray[parent].children[child].icon;
+                    var url = menuArray[parent].children[child].route;
+                    html += '<dd><a href="javascript:;" data-url="' + url + '"><i class="layui-icon ' + childIcon + '"></i><span class="left_icon">' + childTitle + '</span></a></dd>';
+                }
+                html += '</dl>';
+            }
+            html +='</li>';
+        }
+        return html;
+    };
     //将动态生成的HTML导航渲染在左侧列表
     obj.prototype.render = function(menuArray){
         $(".layui-side-scroll ul").html('').append(this.navBar(menuArray));
+        element.init();
+    };
+
+    //将动态生成的HTML导航渲染在顶部列表
+    obj.prototype.render_top = function(menuArray){
+        $(".topLevelMenus").html('').append(this.navBarTop(menuArray));
         element.init();
     };
     var tabIdIndex = 0;

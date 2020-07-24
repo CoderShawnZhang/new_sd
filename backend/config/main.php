@@ -13,11 +13,20 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log','admin'],
+//    'defaultRoute'=>'Login/login/index',//路由
+    'defaultRoute' => 'base',
     'modules' => [
         'admin' => [
             'class' => 'mdm\admin\Module',
+//            'layout' => 'left-menu',
             'layout' => '@backend/views/rbac/layouts/left-menu.php',
             'mainLayout' => '@backend/views/rbac/layouts/main.php',
+//            'menus' => [
+//                'assignment' => [
+//                    'label' => 'Grand Access' // 更改label
+//                ],
+//                'route' => null, // 禁用菜单
+//            ],
             'controllerMap' => [
 //                'menu' => [
 //                    'class' => 'mdm\admin\controllers\AssignmentController',
@@ -80,9 +89,13 @@ return [
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
-            'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
-            'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
+            'identityClass' => 'Service\ServiceModules\ServiceUser\Models\Ar\UserIdentity',
+            'enableAutoLogin' => false,
+            'loginUrl' => '/Login/login/login',
+//            'identityClass' => 'Service\ServiceModules\ServiceUser\Models\Ar\UserIdentity',
+//            'enableAutoLogin' => true,
+//            'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
+//            'loginUrl' => '/Login/login/login',//默认跳转登录页
         ],
         'session' => [
             // this is the name of the session cookie used for login on the backend
@@ -113,13 +126,15 @@ return [
             'charset' => 'utf8',
         ],
     ],
-    'defaultRoute' => 'base',
     'params' => $params,
     'as access' => [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
-            'site/*',
+            'base/index',
+            'site/index',
             'hook/*',
+            'Login/login/login',
+            'Login/login/logout',
             'admin/*',
         ]
     ],

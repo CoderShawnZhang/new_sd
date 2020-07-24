@@ -10,7 +10,7 @@ class Module extends \yii\base\Module
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'backend\Modules\Login\controllers';
+    public $controllerNamespace = 'backend\Modules\Login\Controllers';
 
     /**
      * {@inheritdoc}
@@ -18,7 +18,7 @@ class Module extends \yii\base\Module
     public function init()
     {
         parent::init();
-
+        $this->viewPath = '@backend/Modules/Login/Views';
         // custom initialization code goes here
     }
 }

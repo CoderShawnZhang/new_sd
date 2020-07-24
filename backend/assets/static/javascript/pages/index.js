@@ -1,6 +1,5 @@
 
 let tab;
-let ttt;
 layui.config({
     base: option + "/javascript/pages/"
 }).extend({
@@ -9,7 +8,8 @@ layui.config({
 
 layui.use(['bodyTab'],function(e){
     tab = layui.bodyTab({
-        url:'/site/menu?top_menu_id=1'
+        url:'/site/left-menu?top_menu_id=7',
+        topUrl:'/site/top-menu'
     });
     // 添加新窗口
     $("body").on("click", ".layui-nav-tree .layui-nav-child a", function () {
@@ -20,6 +20,10 @@ layui.use(['bodyTab'],function(e){
         console.log('初始化左侧菜单8888');
         $.get(tab.tabConfig.url,function(res){
             tab.render(res.menu);
+        });
+        console.log('初始化左侧菜单8888');
+        $.get(tab.tabConfig.topUrl,function(res){
+            tab.render_top(res.menu);
         });
     });
 });

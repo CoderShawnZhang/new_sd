@@ -14,7 +14,7 @@ class CronTabController extends Controller
      */
     public function actionIndex()
     {
-        $db = Yii::$app->old_sodeng;
+//        $db = Yii::$app->old_sodeng;
         echo 123;
     }
 }

@@ -17,6 +17,7 @@ class m200718_092902_menu_add_type_name_column extends Migration
          * 菜单新增类型字段，（该字段可以确定是否是项目初始化固定字段）
          */
         $this->addColumn($this->tableName,'type_name',$this->string(10));
+        $this->alterColumn($this->tableName,'data',$this->string(200));
     }
 
     /**

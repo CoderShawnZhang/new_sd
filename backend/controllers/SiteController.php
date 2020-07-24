@@ -2,6 +2,7 @@
 namespace backend\controllers;
 
 use console\models\MenuAr;
+use Service\ServiceModules\ServiceUser\UserService;
 use Yii;
 use yii\helpers\Html;
 use yii\web\Controller;
@@ -58,39 +59,66 @@ class SiteController extends Controller
     }
 
     /**
-     * Displays homepage.
-     *
      * @return string
+     * @throws \yii\web\ForbiddenHttpException
      */
     public function actionIndex()
     {
-//        echo phpinfo();die;//aaa
-
-        return $this->render('index');
+        $user = Yii::$app->getUser();
+        if ($user->getIsGuest()) {
+            $user->loginRequired();
+        } else {
+            return $this->render('index');
+        }
     }
-
     /**
      * 获取菜单列表
      * @test
      */
-    private function getMenu()
+    private function getLeftMenu()
     {
         $get = Yii::$app->request->get();
         $top_menu_id = $get['top_menu_id'];
         $cache = Yii::$app->cache;
-        $cacheRes = $cache->get('menu');
+        $cacheRes = $cache->get('left_menu');
         if($cacheRes){
             return $cacheRes;
         }
-        $menu = MenuAr::find()->where(['parent'=>null])->all();
+        $menu = MenuAr::find()->where(['parent'=>$top_menu_id])->all();
         $menuArray = [];
         foreach($menu as $key => $val){
             $menuArray[] = $val->toArray(['id','name','parent','route','order','data'],['children']);
         };
-        $cache->set('menu',$menuArray);
+        $cache->set('left_menu',$menuArray);
         return $menuArray;
     }
 
+    /**
+     * @return array|mixed
+     */
+    private function getTopMenu()
+    {
+        $cache = Yii::$app->cache;
+        $cacheRes = $cache->get('top_menu');
+        if($cacheRes){
+            return $cacheRes;
+        }
+        $menu = MenuAr::find()->where("data LIKE '%\"top\"%'")->all();
+        $menuArray = [];
+        foreach($menu as $key => $val){
+            $menu_data = json_decode($val['data'],true);
+            if(isset($menu_data['top_show']) == 'false'){
+               continue;
+            }
+            $menuArray[] = $val->toArray(['id','name','parent','route','order','data'],['children']);
+        };
+        $cache->set('top_menu',$menuArray);
+        return $menuArray;
+    }
+
+    /**
+     *
+     */
     public function actionClearCache()
     {
         Yii::$app->cache->flush();
@@ -98,50 +126,28 @@ class SiteController extends Controller
         echo html_entity_decode($notice, ENT_QUOTES, 'UTF-8');
     }
 
-
     /**
-     * @test
+     * @return array
      */
-    private function getMenu1()
-    {
-        $menuArray = [
-            [
-                'id' => 2,'pid' => 1,'title' => '主菜单1','icon' => 'layui-icon-location','url'=>'/site/welcome','target' => '_self',
-                'children'=>[
-                    ['id' => 4,'pid' => 2,'title' => '1-子菜单1','icon' => 'layui-icon-read','url'=>'/site/welcome','target' => '_self'],
-                ]
-            ],
-            [
-                'id' => 3,'pid' => 1,'title' => '主菜单2','icon' => 'layui-icon-face-smile','url'=>'/site/welcome','target' => '_self',
-                'children'=>[
-                    ['id' => 7,'pid' => 3,'title' => '2-子菜单1','icon' => 'layui-icon-find-fill','url'=>'/site/welcome','target' => '_self'],
-                    ['id' => 8,'pid' => 3,'title' => '2-子菜单2','icon' => 'layui-icon-speaker','url'=>'/site/welcome','target' => '_self'],
-                ]
-            ]
-        ];
-        return $menuArray;
-    }
-
-    public function actionMenu()
+    public function actionLeftMenu()
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
-
         return [
-            'menu' => $this->getMenu(),
+            'menu' => $this->getLeftMenu(),
             'success' => 22,
             'msg' => 11,
         ];
     }
 
-    public function actionTop()
+    /**
+     * @return array
+     */
+    public function actionTopMenu()
     {
-
         $get = Yii::$app->request->get();
-        $type = isset($get['type']) ? $get['type'] : 0;
-
         Yii::$app->response->format = Response::FORMAT_JSON;
         return [
-            'menu' => $this->getMenu1(),
+            'menu' => $this->getTopMenu(),
             'success' => 22,
             'msg' => 11,
         ];

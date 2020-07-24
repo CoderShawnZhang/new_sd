@@ -13,6 +13,10 @@ use yii\widgets\Menu;
 
 class InitMenuRawController extends BaseController
 {
+    public function actionRun1()
+    {
+        echo 123;
+    }
     public function beforeAction($action)
     {
         $menu = MenuAr::deleteAll(['type_name' => 'rbac']);
@@ -66,11 +70,12 @@ class InitMenuRawController extends BaseController
         return [
             'parent' => ['name' => 'RBAC(开发使用)', 'parent' => '', 'route' => '/admin/role/index', 'order'=>'', 'data'=>'{"icon":"layui-icon-auz"}' ,'type_name' => 'rbac'],
             'children' => [
-                ['name' => '角色列表', 'parent' => $parent_id, 'route' => '/admin/role/index', 'order'=>1, 'data'=>'{"icon":"layui-icon-set"}' ,'type_name' => 'rbac'],
-                ['name' => '权限列表', 'parent' => $parent_id, 'route' => '/admin/permission/index', 'order'=>2, 'data'=>'{"icon":"layui-icon-set"}' ,'type_name' => 'rbac'],
-                ['name' => '路由列表', 'parent' => $parent_id, 'route' => '/admin/route/index', 'order'=>3, 'data'=>'{"icon":"layui-icon-set"}' ,'type_name' => 'rbac'],
-                ['name' => '规则列表', 'parent' => $parent_id, 'route' => '/admin/rule/index', 'order'=>4, 'data'=>'{"icon":"layui-icon-set"}' ,'type_name' => 'rbac'],
-                ['name' => '菜单列表', 'parent' => $parent_id, 'route' => '/admin/menu/index', 'order'=>5, 'data'=>'{"icon":"layui-icon-set"}' ,'type_name' => 'rbac']
+                ['name' => '角色列表', 'parent' => $parent_id, 'route' => '/admin/role/index', 'order' => 1, 'data' => '{"icon":"layui-icon-set"}' ,'type_name' => 'rbac'],
+                ['name' => '分配角色', 'parent' => $parent_id, 'route' => '/admin/assignment/index', 'order' => 2, 'data' => '{"icon":"layui-icon-set"}' ,'type_name' => 'rbac'],
+                ['name' => '权限列表', 'parent' => $parent_id, 'route' => '/admin/permission/index', 'order' => 3, 'data'=> '{"icon":"layui-icon-set"}' ,'type_name' => 'rbac'],
+                ['name' => '路由列表', 'parent' => $parent_id, 'route' => '/admin/route/index', 'order' => 4, 'data' => '{"icon":"layui-icon-set"}' ,'type_name' => 'rbac'],
+                ['name' => '规则列表', 'parent' => $parent_id, 'route' => '/admin/rule/index', 'order' => 5, 'data' => '{"icon":"layui-icon-set"}' ,'type_name' => 'rbac'],
+                ['name' => '菜单列表', 'parent' => $parent_id, 'route' => '/admin/menu/index', 'order' => 6, 'data' => '{"icon":"layui-icon-set"}' ,'type_name' => 'rbac']
             ]
         ];
     }
