@@ -6,6 +6,10 @@ return [
     ],
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
+        //加密解密的库【工具】
+        'security' => [
+            'class' => 'Service\ServiceHelper\Security',
+        ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
@@ -20,12 +24,12 @@ return [
          /**
          * 数据库相关设置
          */
-//        'db' => [
-//            'class' => 'yii\db\Connection',
-//            'dsn' => 'mysql:host=localhost;dbname=sdadmin;port=3306',
-//            'username' => 'root',
-//            'password' => 'sodeng123#+',
-//            'charset' => 'utf8',
-//        ],
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=sdadmin;port=3306',
+            'username' => 'root',
+            'password' => 'sodeng123#+',
+            'charset' => 'utf8',
+        ],
     ],
 ];

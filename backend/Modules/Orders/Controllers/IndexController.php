@@ -14,7 +14,13 @@ class IndexController extends BaseController
 {
     public function actionIndex()
     {
-        return $this->render('index');
+        $user = \Yii::$app->getUser();
+        if ($user->getIsGuest()) {
+            $user->loginRequired();
+        } else {
+           return $this->redirect(['site/index']);
+        }
+//        return $this->render('index');
     }
 
     public function actionData(){

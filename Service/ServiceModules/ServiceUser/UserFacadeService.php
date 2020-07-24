@@ -9,6 +9,7 @@
 namespace Service\ServiceModules\ServiceUser;
 
 use Service\ServiceBase\BaseService;
+use Service\ServiceModules\ServiceUser\Models\UserLoginModel;
 
 /**
  * 分发多个子系统功能
@@ -17,19 +18,13 @@ use Service\ServiceBase\BaseService;
  */
 final class UserFacadeService extends BaseService
 {
-    //客户管理
-    //客户角色
-    //客户代理商
-    //客户加盟商
-    //客户返现计算
-    //客户任务
-    public  function a()
-    {
-
-    }
-
-    public function b()
-    {
-        UserFacadeService::a();
-    }
+    /**
+     * @param $loginData
+     * @param $model UserLoginModel
+     * @return mixed
+     */
+   public static function Login($loginData,$model)
+   {
+      return $model->checkLoginData($loginData,$model);
+   }
 }

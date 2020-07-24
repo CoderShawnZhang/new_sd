@@ -14,4 +14,13 @@ class BaseController extends Controller
 {
 	public $layout = '@app/views/layouts/iframeMain.php';
 
+	public function actionIndex()
+    {
+        $user = Yii::$app->getUser();
+        if ($user->getIsGuest()) {
+            $user->loginRequired();
+        } else {
+            $this->redirect(['site/index']);
+        }
+    }
 }

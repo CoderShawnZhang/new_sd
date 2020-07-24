@@ -39,36 +39,6 @@ $appAsset = AppAsset::register($this);
         <a href="javascript:;" class="seraph hideMenu icon-caidan"></a>
         <!-- 头部区域（可配合layui已有的水平导航） -->
         <ul class="layui-nav layui-layout-left topLevelMenus">
-            <li class="layui-nav-item" data-menu="1"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>搜灯网[2111]</a></li>
-            <li class="layui-nav-item" data-menu="2"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>统计报表111</a></li>
-            <li class="layui-nav-item" data-menu="3"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>单据查询1</a></li>
-            <li class="layui-nav-item" data-menu="4"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>定时任务2</a></li>
-            <li class="layui-nav-item" data-menu="5"><a href="javascript:;"><i class="layui-icon layui-icon-website"></i>配置管理2</a></li>
-            <li class="layui-nav-item">
-                <a href="javascript:;"><i class="layui-icon layui-icon-website"></i>其它系统<span class="layui-nav-more"></span></a>
-                <dl class="layui-nav-child top_admin_nav">
-                    <dd><a href=""><i class="layui-icon layui-icon-website"></i>邮件管理</a></dd>
-                    <dd><a href=""><i class="layui-icon layui-icon-website"></i>消息管理</a></dd>
-                    <dd><a href=""><i class="layui-icon layui-icon-website"></i>授权管理</a></dd>
-                </dl>
-            </li>
-<!--            <li class="layui-nav-item" data-menu="6"><a href="javascript:;">系统管理</a></li>-->
-            <li class="layui-nav-item">
-                <a href="javascript:;">
-                    <i class="layui-icon layui-icon-website"></i>系统管理<span class="layui-nav-more"></span>
-                </a>
-                <dl class="layui-nav-child top_admin_nav">
-                    <dd><a href=""><i class="layui-icon layui-icon-website"></i>基本资料</a></dd>
-                    <dd><a href=""><i class="layui-icon layui-icon-website"></i>安全设置</a></dd>
-                    <dd><a href=""><i class="layui-icon layui-icon-website"></i>安全设置</a></dd>
-                    <dd><a href=""><i class="layui-icon layui-icon-website"></i>安全设置</a></dd>
-                    <dd><a href=""><i class="layui-icon layui-icon-website"></i>安全设置</a></dd>
-                    <dd><a href=""><i class="layui-icon layui-icon-website"></i>安全设置</a></dd>
-                    <dd><a href=""><i class="layui-icon layui-icon-website"></i>安全设置</a></dd>
-                    <dd><a href=""><i class="layui-icon layui-icon-website"></i>安全设置</a></dd>
-                    <dd><a href=""><i class="layui-icon layui-icon-website"></i>安全设置</a></dd>
-                </dl>
-            </li>
 
         </ul>
         <ul class="layui-nav layui-layout-right">
@@ -81,7 +51,7 @@ $appAsset = AppAsset::register($this);
                 <dl class="layui-nav-child top_admin_nav">
                     <dd><a href=""><i class="layui-icon layui-icon-username"></i>基本资料</a></dd>
                     <dd><a href=""><i class="layui-icon layui-icon-auz"></i>安全设置</a></dd>
-                    <dd><a href=""><i class="layui-icon layui-icon-logout"></i>退出</a></dd>
+                    <dd><a href="/Login/login/logout"><i class="layui-icon layui-icon-logout"></i>退出</a></dd>
                 </dl>
             </li>
 <!--            <li class="layui-nav-item"><a href="">退出</a></li>-->
