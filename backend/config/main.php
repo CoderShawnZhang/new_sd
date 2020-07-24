@@ -127,15 +127,15 @@ return [
         ],
     ],
     'params' => $params,
-    'as access' => [
-        'class' => 'mdm\admin\components\AccessControl',
-        'allowActions' => [
-            'base/index',
-            'site/index',
-            'hook/*',
-            'Login/login/login',
-            'Login/login/logout',
-            'admin/*',
-        ]
-    ],
+//    'as access' => [
+//        'class' => 'mdm\admin\components\AccessControl',
+//        'allowActions' => [
+//            'base/index',
+//            'site/index',
+//            'hook/*',
+//            'Login/login/login',
+//            'Login/login/logout',
+//            'admin/*',
+//        ]
+//    ],
 ];
