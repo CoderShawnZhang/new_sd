@@ -1,9 +1,13 @@
 <?php
 namespace backend\controllers;
 
+use Codeception\Command\Shared\Config;
 use console\models\MenuAr;
+use Service\ServiceHelper\ConfigService;
+use Service\ServiceHelper\Models\Ar\ConfigAr;
 use Service\ServiceModules\ServiceUser\UserService;
 use Yii;
+use yii\debug\models\search\Db;
 use yii\helpers\Html;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -63,7 +67,7 @@ class SiteController extends Controller
      * @throws \yii\web\ForbiddenHttpException
      */
     public function actionIndex()
-    {
+    { return $this->render('index');
         $user = Yii::$app->getUser();
         if ($user->getIsGuest()) {
             $user->loginRequired();
@@ -78,9 +82,14 @@ class SiteController extends Controller
     private function getLeftMenu()
     {
         $get = Yii::$app->request->get();
-        $top_menu_id = $get['top_menu_id'];
+        $top_menu_id = isset($get['top_menu_id']) ? $get['top_menu_id'] : '';
+        if(empty($top_menu_id)){
+            $top_menu_id = $this->getTopMenuInitParenId();
+        }
+        //缓存key
+        $cacheKey = $top_menu_id.'_left_menu';
         $cache = Yii::$app->cache;
-        $cacheRes = $cache->get('left_menu');
+        $cacheRes = $cache->get($cacheKey);
         if($cacheRes){
             return $cacheRes;
         }
@@ -89,8 +98,13 @@ class SiteController extends Controller
         foreach($menu as $key => $val){
             $menuArray[] = $val->toArray(['id','name','parent','route','order','data'],['children']);
         };
-        $cache->set('left_menu',$menuArray);
+        $cache->set($cacheKey,$menuArray);
         return $menuArray;
+    }
+
+    private function getTopMenuInitParenId()
+    {
+        return  ConfigService::getTopInitMenu();
     }
 
     /**
@@ -101,7 +115,7 @@ class SiteController extends Controller
         $cache = Yii::$app->cache;
         $cacheRes = $cache->get('top_menu');
         if($cacheRes){
-            return $cacheRes;
+//            return $cacheRes;
         }
         $menu = MenuAr::find()->where("data LIKE '%\"top\"%'")->all();
         $menuArray = [];
@@ -110,7 +124,11 @@ class SiteController extends Controller
             if(isset($menu_data['top_show']) == 'false'){
                continue;
             }
-            $menuArray[] = $val->toArray(['id','name','parent','route','order','data'],['children']);
+            $expend = ['children'];
+//            if(isset($menu_data['show_child']) == 'false'){
+//                $expend = [];
+//            }
+            $menuArray[] = $val->toArray(['id','name','parent','route','order','data'],$expend);
         };
         $cache->set('top_menu',$menuArray);
         return $menuArray;

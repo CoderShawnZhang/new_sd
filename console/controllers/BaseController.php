@@ -19,6 +19,5 @@ class BaseController extends Controller
         if($endOfLine){
             echo PHP_EOL;
         }
-        die;
     }
 }

@@ -19,13 +19,13 @@ class IndexController extends BaseController
         /**
          * @var IdentityaInterface $t;
          */
-        $t = \Yii::$app->user->identity;
+//        $t = \Yii::$app->user->identity;
 
         /**
          * @var IdentityaInterface $t;
          */
-        $A = $t->username;
-        var_dump($A);
+//        $A = $t->username;
+//        var_dump($A);
         return $this->render('test');
     }
 }

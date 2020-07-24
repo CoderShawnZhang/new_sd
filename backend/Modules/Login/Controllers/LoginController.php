@@ -16,7 +16,7 @@ class LoginController extends Controller
 {
     public $layout = '@app/views/layouts/login.php';
 
-    public function actionLogin()
+    public function actionLogin1()
     {
         if (!Yii::$app->user->isGuest) {
             return $this->goHome(['user/index']);
@@ -54,7 +54,7 @@ class LoginController extends Controller
     /**
      * 登录
      */
-    public function actionLogin1()
+    public function actionLogin()
     {
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome(['/site/index']);
@@ -63,13 +63,12 @@ class LoginController extends Controller
         $postData = \Yii::$app->request->post();
         if(!empty($postData)){
             try{
-
                 //检查是否登录成功
-//            if(UserService::checkLogin($postData,$model)){
-                UserService::checkLogin($postData,$model);
-                $jumpUrl = \Yii::$app->request->post('jumpUrl');
-                return empty($jumpUrl) ? $this->redirect(['/site/index']) : $this->redirect(urldecode($jumpUrl));
-//            }
+//                if(UserService::checkLogin($postData,$model)){
+                    UserService::checkLogin($postData,$model);
+                    $jumpUrl = \Yii::$app->request->post('jumpUrl');
+                    return empty($jumpUrl) ? $this->redirect(['/site/index']) : $this->redirect(urldecode($jumpUrl));
+//                }
             } catch (\Exception $e){
                 $model->clearErrors();
                 $model->addError('password', $e->getMessage());

@@ -11,7 +11,7 @@ class m200718_092902_menu_add_type_name_column extends Migration
     /**
      * {@inheritdoc}
      */
-    public function safeUp()
+    public function up()
     {
         /**
          * 菜单新增类型字段，（该字段可以确定是否是项目初始化固定字段）
@@ -23,10 +23,10 @@ class m200718_092902_menu_add_type_name_column extends Migration
     /**
      * {@inheritdoc}
      */
-    public function safeDown()
+    public function down()
     {
-        echo "m200718_092902_menu_add_type_name_column cannot be reverted.\n";
-
+        $this->dropColumn($this->tableName,'type_name');
+        $this->dropColumn($this->tableName,'data');
         return false;
     }
 

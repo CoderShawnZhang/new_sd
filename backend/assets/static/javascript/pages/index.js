@@ -8,7 +8,7 @@ layui.config({
 
 layui.use(['bodyTab'],function(e){
     tab = layui.bodyTab({
-        url:'/site/left-menu?top_menu_id=7',
+        url:'/site/left-menu',
         topUrl:'/site/top-menu'
     });
     // 添加新窗口
@@ -27,12 +27,10 @@ layui.use(['bodyTab'],function(e){
         });
     });
 });
-$(".topLevelMenus li").click(function () {
+
+$("body").on("click", ".topLevelMenus li", function () {
     var url = tab.tabConfig.url;
     var top_menu_id = $(this).data('menu');
-    // if(top_menu_id == undefined || top_menu_id == ''){
-    //     top_menu_id=1;
-    // }
     $.get(url,{top_menu_id:top_menu_id},function(res){
         tab.render(res.menu);
     });
@@ -40,7 +38,7 @@ $(".topLevelMenus li").click(function () {
 //左侧导航收缩
 $("body").on("click", ".layui-nav-tree .layui-nav-item a", function () {
     $(this).parent("li").siblings().removeClass("layui-nav-itemed");
-})
+});
 //隐藏左侧导航
 $(".hideMenu").click(function () {
     // if ($(".topLevelMenus li.layui-this a").data("url")) {

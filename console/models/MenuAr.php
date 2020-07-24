@@ -14,6 +14,7 @@ use yii\db\ActiveRecord;
  * Class MenuAr
  * @package console\models
  * @property string name
+ * @property integer id
  */
 class MenuAr extends ActiveRecord
 {
@@ -46,8 +47,8 @@ class MenuAr extends ActiveRecord
     public function fields()
     {
         $fieldsArray = [
-            'id' => function(){
-                return 999;
+            'id' => function($m){
+                return $m->id;
             }
         ];
         return array_merge(parent::fields(),$fieldsArray);
@@ -57,6 +58,10 @@ class MenuAr extends ActiveRecord
     {
         return [
             'children' => function ($m){
+                $menu_data = json_decode($m->data,true);
+                if(isset($menu_data['show_child']) == 'false'){
+                    return [];
+                }
                return self::find()->where(['parent' => $m['id']])->asArray()->all();
             }
         ];

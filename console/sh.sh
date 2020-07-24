@@ -1,16 +1,13 @@
-//创建角色权限表
- php yii migrate --migrationPath=@yii/rbac/migrations
- //创建menu表,user表
- php yii migrate --migrationPath=@mdm/admin/migrations
- //设置表附加字段
- php yii migrate
- //初始化菜单
- php yii ProjectInit/init-menu-raw/run
- //初始化顶部菜单
- php yii ProjectInit/init-top-menu/run
- //初始化管理员账号
- php yii ProjectInit/init-user-admin-data/run
- 
 
- ***重新初始化删除数据表***
- php yii migrate m200724_082700_drop_table
+ php yii migrate --migrationPath=@yii/rbac/migrations
+
+ php yii migrate --migrationPath=@mdm/admin/migrations
+
+ php yii migrate
+
+ php yii ProjectInit/init-menu-raw/run
+
+ php yii ProjectInit/init-top-menu/run
+
+ php yii ProjectInit/init-user-admin-data/run
+
