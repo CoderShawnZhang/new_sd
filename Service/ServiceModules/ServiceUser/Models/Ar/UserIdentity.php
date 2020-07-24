@@ -17,9 +17,9 @@ use Yii;
  */
 class UserIdentity extends ActiveRecord implements IdentityaInterface
 {
-    const USER_STATUS_0 = 0; // 正常
-    const USER_STATUS_1 = 1; // 停用
-    const USER_STATUS_2 = 2; // 锁定
+    const USER_STATUS_0 = 10; // 正常 10 RBAC初始化user表status默认值
+    const USER_STATUS_1 = 11; // 停用
+    const USER_STATUS_2 = 12; // 锁定
 
 
     public static function tableName()

@@ -91,7 +91,7 @@ class SiteController extends Controller
         $cache = Yii::$app->cache;
         $cacheRes = $cache->get($cacheKey);
         if($cacheRes){
-            return $cacheRes;
+//            return $cacheRes;
         }
         $menu = MenuAr::find()->where(['parent'=>$top_menu_id])->all();
         $menuArray = [];
