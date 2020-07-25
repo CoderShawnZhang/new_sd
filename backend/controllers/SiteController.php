@@ -67,7 +67,7 @@ class SiteController extends Controller
      * @throws \yii\web\ForbiddenHttpException
      */
     public function actionIndex()
-    { return $this->render('index');
+    {
         $user = Yii::$app->getUser();
         if ($user->getIsGuest()) {
             $user->loginRequired();

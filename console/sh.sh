@@ -11,3 +11,4 @@
 
  php yii ProjectInit/init-user-admin-data/run
 
+ php yii ProjectInit/init-admin-rote/run
