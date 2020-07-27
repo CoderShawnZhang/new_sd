@@ -12,6 +12,6 @@ use yii\db\ActiveRecord;
 class user extends ActiveRecord{
     public static function tableName()
     {
-        return '{{user}}';
+        return '{{%user}}';
     }
 }

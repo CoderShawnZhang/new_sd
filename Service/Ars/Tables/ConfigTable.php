@@ -19,7 +19,7 @@ class ConfigTable extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'config';
+        return '{{%config}}';
     }
 
     /**

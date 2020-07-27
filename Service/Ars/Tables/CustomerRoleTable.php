@@ -21,7 +21,7 @@ class CustomerRoleTable extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'sd_customer_role';
+        return '{{%customer_role}}';
     }
 
     /**

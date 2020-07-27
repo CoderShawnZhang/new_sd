@@ -18,7 +18,7 @@ class CustomerTable extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'customer';
+        return '{{%customer}}';
     }
 
     /**

@@ -34,7 +34,7 @@ class CustomerCommonTable extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'sd_customer_common';
+        return '{{%customer_common}}';
     }
 
     /**

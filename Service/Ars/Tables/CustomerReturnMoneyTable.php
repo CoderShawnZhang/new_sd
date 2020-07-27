@@ -37,7 +37,7 @@ class CustomerReturnMoneyTable extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'sd_customer_return_money';
+        return '{{%customer_return_money}}';
     }
 
     /**

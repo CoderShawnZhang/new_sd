@@ -22,7 +22,7 @@ class OpenRoleRelationTable extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'sd_open_role_relation';
+        return '{{%open_role_relation}}';
     }
 
     /**

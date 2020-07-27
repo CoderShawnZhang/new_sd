@@ -24,7 +24,7 @@ class UserIdentity extends ActiveRecord implements IdentityaInterface
 
     public static function tableName()
     {
-        return '{{user}}';
+        return '{{%user}}';
     }
 
     public static function getUserInfo($username)
