@@ -23,7 +23,7 @@ layui.use(['bodyTab'],function(e){
         });
         console.log('初始化左侧菜单8888');
         $.get(tab.tabConfig.topUrl,function(res){
-            tab.render_top(res.menu);
+            tab.render_top(res.menu,res.init_menu_id);
         });
     });
 });
@@ -33,6 +33,7 @@ $("body").on("mouseover", ".topLevelMenus li", function () {
         $(this).addClass('layui-this').siblings().removeClass('layui-this');
     }
 });
+
 $("body").on("mouseout", ".topLevelMenus li", function () {
     if($(this).data('tag') != 'activity') {
         $(this).removeClass('layui-this');

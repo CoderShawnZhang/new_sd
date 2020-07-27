@@ -127,6 +127,7 @@ return [
             'username' => 'root',
             'password' => 'sodeng123#+',
             'charset' => 'utf8',
+            'tablePrefix' => 'sd_'
         ],
     ],
     'params' => $params,

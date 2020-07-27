@@ -162,12 +162,13 @@ class SiteController extends Controller
      */
     public function actionTopMenu()
     {
-        $get = Yii::$app->request->get();
+//        $get = Yii::$app->request->get();
         Yii::$app->response->format = Response::FORMAT_JSON;
         return [
             'menu' => $this->getTopMenu(),
-            'success' => 22,
-            'msg' => 11,
+            'init_menu_id' => ConfigService::getTopInitMenu(),
+            'success' => true,
+            'msg' => '',
         ];
     }
     /**

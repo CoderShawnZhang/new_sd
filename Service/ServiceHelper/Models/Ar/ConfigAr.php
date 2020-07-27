@@ -20,6 +20,6 @@ class ConfigAr extends ActiveRecord
 {
     public static function tableName()
     {
-        return '{{%config}}';
+        return '{{config}}';
     }
 }

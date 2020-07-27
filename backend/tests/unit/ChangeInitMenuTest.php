@@ -41,7 +41,6 @@ class ChangeInitMenuTest extends \Codeception\Test\Unit
      */
     public function changeInitMenu($init_menu_id)
     {
-
         $config_init_menu_id = ConfigService::getTopInitMenu();
         $this->assertEquals($init_menu_id,$config_init_menu_id);
     }
