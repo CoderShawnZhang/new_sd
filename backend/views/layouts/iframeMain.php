@@ -6,7 +6,7 @@
 use backend\assets\AppAsset;
 use yii\helpers\Html;
 use yii\helpers\Url;
-$appAsset = AppAsset::register($this);
+$appAsset = \backend\assets\IframeAsset::register($this);
 ?>
 
 <?php $this->beginPage() ?>

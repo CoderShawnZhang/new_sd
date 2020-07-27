@@ -56,6 +56,9 @@ return [
         //订单模块
         'Orders' => [
             'class' => 'backend\Modules\Orders\Module',
+        ],
+        'Config' => [
+            'class' => 'backend\Modules\Config\Module',
         ]
     ],
     'components' => [

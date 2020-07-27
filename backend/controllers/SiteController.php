@@ -117,7 +117,7 @@ class SiteController extends Controller
         if($cacheRes){
 //            return $cacheRes;
         }
-        $menu = MenuAr::find()->where("data LIKE '%\"top\"%'")->all();
+        $menu = MenuAr::find()->where("data LIKE '%\"top\"%'")->orderBy('order asc')->all();
         $menuArray = [];
         foreach($menu as $key => $val){
             $menu_data = json_decode($val['data'],true);

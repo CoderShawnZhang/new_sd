@@ -43,7 +43,7 @@ layui.define(["element"],function(exports){ //提示：模块也可以依赖其�
             var id = menuArray[parent].id;
             var topTitle = menuArray[parent].name;
             var topIcon = menuArray[parent].icon;
-            html +='<li class="layui-nav-item" data-menu="'+id+'">';
+            html +='<li class="layui-nav-item" data-tag="" data-menu="'+id+'">';
             html +='<a class="" href="javascript:;"><i class="layui-icon '+topIcon+'"></i><span class="left_icon">'+topTitle+'</span></a>';
             if(menuArray[parent].children.length>0) {
                 html += '<dl class="layui-nav-child top_admin_nav">';

@@ -14,7 +14,9 @@ use Service\ServiceHelper\Models\Ar\ConfigAr;
 class ConfigService
 {
     const TOP_INIT_MENU_KEY = 'top_menu_init';
+
     /**
+     * 根据指定KEY,获取value配置值
      * @param $key
      * @return mixed|string
      */
@@ -25,6 +27,23 @@ class ConfigService
         return isset($config['value']) ? $config['value'] : '';
     }
 
+    public static function setValue($key,$value,$desc = '')
+    {
+        $model = ConfigAr::find();
+        $config = $model->where(['key' => $key])->one();
+        if(empty($config)){
+            $model = new ConfigAr();
+            $model->key = $key;
+            $model->value = $value;
+            $model->desc = $desc;
+            $model->save();
+        }
+    }
+
+    /**
+     * 获取顶部初始菜单id
+     * @return mixed|string
+     */
     public static function getTopInitMenu()
     {
         $model = ConfigAr::find();

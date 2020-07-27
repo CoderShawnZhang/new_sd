@@ -4,6 +4,8 @@ iframe {
     width: 100%;
     border: none;
 }
+
+
 .layui-nav-item a{
     text-decoration:none
 }
@@ -16,7 +18,7 @@ iframe {
 .layui-tab{
     margin:0;
 }
-.layui-tab-content{
+.clildFrame.layui-tab-content{
     top: 40px;
     position: absolute;
     bottom: 0;

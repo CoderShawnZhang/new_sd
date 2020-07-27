@@ -11019,3 +11019,1319 @@ $_SERVER = [
     'argc' => 3
     'SHELL_VERBOSITY' => 0
 ]
+2020-07-26 08:13:17 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:13:17 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751197.2578
+    'REQUEST_TIME' => 1595751197
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:13:36 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:13:36 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751216.1572
+    'REQUEST_TIME' => 1595751216
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:23:03 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:23:03 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751783.654
+    'REQUEST_TIME' => 1595751783
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:23:03 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:23:03 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751783.654
+    'REQUEST_TIME' => 1595751783
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:23:32 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:23:31 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751811.87
+    'REQUEST_TIME' => 1595751811
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:23:32 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:23:31 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751811.87
+    'REQUEST_TIME' => 1595751811
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:24:01 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:24:01 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751841.6052
+    'REQUEST_TIME' => 1595751841
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:24:01 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:24:01 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751841.6052
+    'REQUEST_TIME' => 1595751841
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:24:07 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:24:07 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751847.8072
+    'REQUEST_TIME' => 1595751847
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:24:08 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:24:07 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751847.8072
+    'REQUEST_TIME' => 1595751847
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:25:34 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:25:34 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751934.1935
+    'REQUEST_TIME' => 1595751934
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:25:34 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:25:34 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751934.1935
+    'REQUEST_TIME' => 1595751934
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:25:45 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:25:45 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751945.6798
+    'REQUEST_TIME' => 1595751945
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:25:45 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:25:45 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751945.6798
+    'REQUEST_TIME' => 1595751945
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:26:12 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:26:12 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751972.3777
+    'REQUEST_TIME' => 1595751972
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+        3 => '--debug'
+    ]
+    'argc' => 4
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:26:12 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:26:12 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595751972.3777
+    'REQUEST_TIME' => 1595751972
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+        3 => '--debug'
+    ]
+    'argc' => 4
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:28:25 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:28:25 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595752105.4495
+    'REQUEST_TIME' => 1595752105
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-26 08:28:25 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-26 08:28:25 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.FUXGQMBHAA/Render'
+    'OLDPWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DHXl7ZwIpk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595752105.4495
+    'REQUEST_TIME' => 1595752105
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-27 01:38:50 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-27 01:38:50 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.F3fRFTzm3o/Render'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.Tzg0SiAaiR/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595813930.7407
+    'REQUEST_TIME' => 1595813930
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-27 01:38:50 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-27 01:38:50 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.F3fRFTzm3o/Render'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.Tzg0SiAaiR/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595813930.7407
+    'REQUEST_TIME' => 1595813930
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-27 01:39:26 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-27 01:39:26 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.F3fRFTzm3o/Render'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.Tzg0SiAaiR/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595813966.398
+    'REQUEST_TIME' => 1595813966
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-27 01:39:26 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-27 01:39:26 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.F3fRFTzm3o/Render'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.Tzg0SiAaiR/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595813966.398
+    'REQUEST_TIME' => 1595813966
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-27 01:40:19 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-27 01:40:18 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.F3fRFTzm3o/Render'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.Tzg0SiAaiR/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595814018.9211
+    'REQUEST_TIME' => 1595814018
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]
+2020-07-27 01:40:19 [warning][application] Unable to use cache for URL manager: Failed to instantiate component or class "cache".
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/mdmsoft/yii2-admin/Module.php:106
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Lib/Connector/Yii2.php:274
+    in /Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/vendor/codeception/module-yii2/src/Codeception/Module/Yii2.php:334
+2020-07-27 01:40:18 [info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = []
+
+$_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/9z/ddz4978j4nzc93khw7qlxy0m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.F3fRFTzm3o/Render'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'USER' => 'zhanghongbo'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.Tzg0SiAaiR/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'COMPOSER_CACHE_DIR' => '/Applications/MxSrvs/cache/composer'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PWD' => '/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/backend'
+    'XPC_FLAGS' => '0x0'
+    'PS1' => '\\[\\033[01;33m\\]\\h\\[\\033[01;31m\\] \\W\\$\\[\\033[00m\\] '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhanghongbo'
+    'LOGNAME' => 'zhanghongbo'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HISTFILE' => '/Users/zhanghongbo/Library/Preferences/PhpStorm2018.3/terminal/history/history-2'
+    'BASH_FUNC_generate_command_executed_sequence%%' => '() {  printf \'\\e\\7\'
+}'
+    '_' => '/usr/local/bin/codecept'
+    'PHP_SELF' => '/usr/local/bin/codecept'
+    'SCRIPT_NAME' => '/usr/local/bin/codecept'
+    'SCRIPT_FILENAME' => '/usr/local/bin/codecept'
+    'PATH_TRANSLATED' => '/usr/local/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1595814018.9211
+    'REQUEST_TIME' => 1595814018
+    'argv' => [
+        0 => '/usr/local/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SHELL_VERBOSITY' => 0
+]

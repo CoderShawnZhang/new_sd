@@ -28,7 +28,20 @@ layui.use(['bodyTab'],function(e){
     });
 });
 
+$("body").on("mouseover", ".topLevelMenus li", function () {
+    if($(this).data('tag') != 'activity'){
+        $(this).addClass('layui-this').siblings().removeClass('layui-this');
+    }
+});
+$("body").on("mouseout", ".topLevelMenus li", function () {
+    if($(this).data('tag') != 'activity') {
+        $(this).removeClass('layui-this');
+    }
+});
+
 $("body").on("click", ".topLevelMenus li", function () {
+    $(this).data('tag','activity');
+    $(this).addClass('layui-this');
     var url = tab.tabConfig.url;
     var top_menu_id = $(this).data('menu');
     $.get(url,{top_menu_id:top_menu_id},function(res){
