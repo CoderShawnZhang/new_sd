@@ -15,11 +15,19 @@ return [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+//    'controllerMap' => [
+//        'fixture' => [
+//            'class' => 'yii\console\controllers\FixtureController',
+//            'namespace' => 'common\fixtures',
+//          ],
+//    ],
+    //backend
     'controllerMap' => [
         'fixture' => [
-            'class' => 'yii\console\controllers\FixtureController',
-            'namespace' => 'common\fixtures',
-          ],
+            'class' => 'yii\faker\FixtureController',
+            'templatePath' => '@console/tests/unit/templates/fixtures',
+            'fixtureDataPath' => '@console/tests/unit/fixtures/data',
+        ],
     ],
     'components' => [
         'log' => [

@@ -18,3 +18,16 @@
     执行：codecept run functional
 8:测试报告
     codecept run --steps --xml --html
+    
+9:通过Faker生成测试数据
+        'controllerMap' => [
+            'fixture' => [
+                'class' => 'yii\faker\FixtureController',
+                'providers' => [
+                    '@console/tests/unit/templates/fixtures',
+                ],
+                'templatePath' => '@console/tests/unit/templates/fixtures',
+                'fixtureDataPath' => '@console/tests/unit/fixtures/data',
+            ],
+        ],
+        执行: php yii fixture/generate-all
