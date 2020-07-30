@@ -17,8 +17,7 @@
 7:创建功能测试：codecept generate:cept functional a
     执行：codecept run functional
 8:测试报告
-    codecept run --steps --xml --html
-    
+    codecept run unit --steps --xml --html
 9:通过Faker生成测试数据
         'controllerMap' => [
             'fixture' => [

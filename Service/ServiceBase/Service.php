@@ -2,12 +2,14 @@
 /**
  * Created by PhpStorm.
  * User: zhanghongbo
- * Date: 2020-07-21
- * Time: 16:42
+ * Date: 2020-07-30
+ * Time: 09:56
  */
+
 namespace Service\ServiceBase;
 
-class BaseService
+
+class Service
 {
 
 }

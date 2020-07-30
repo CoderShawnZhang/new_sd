@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="console\tests.unit" tests="1" assertions="0" errors="0" failures="0" skipped="0" time="0.007528">
+    <testcase name="testSomeFeature" class="console\tests\aTest" file="/Users/zhanghongbo/develop/docker/dev/var/data/www/yii_sodeng/console/tests/unit/aTest.php" assertions="0" time="0.007528"/>
+  </testsuite>
+</testsuites>

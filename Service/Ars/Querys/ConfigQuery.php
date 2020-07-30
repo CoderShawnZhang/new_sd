@@ -31,4 +31,10 @@ class ConfigQuery extends \yii\db\ActiveQuery
     {
         return parent::one($db);
     }
+
+    public function topMenu()
+    {
+        $this->andFilterWhere(['like','data','top']);
+        return $this;
+    }
 }

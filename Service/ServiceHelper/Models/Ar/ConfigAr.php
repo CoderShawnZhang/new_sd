@@ -7,6 +7,7 @@
  */
 namespace Service\ServiceHelper\Models\Ar;
 
+use Service\Ars\Tables\ConfigTable;
 use yii\db\ActiveRecord;
 
 /**
@@ -16,7 +17,7 @@ use yii\db\ActiveRecord;
  * @property $value string
  * @property $desc string
  */
-class ConfigAr extends ActiveRecord
+class ConfigAr extends ConfigTable
 {
     public static function tableName()
     {

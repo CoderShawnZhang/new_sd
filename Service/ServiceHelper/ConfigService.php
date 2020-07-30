@@ -9,12 +9,23 @@
 namespace Service\ServiceHelper;
 
 
+use Service\ServiceBase\Service;
 use Service\ServiceHelper\Models\Ar\ConfigAr;
+use Service\ServiceHelper\Modules\HelperModule;
+use Service\ServiceHelper\Modules\SearchModule\ConfigSearch;
 
-class ConfigService
+class ConfigService extends Service
 {
     const TOP_INIT_MENU_KEY = 'top_menu_init';
 
+    /**
+     * @return HelperModule
+     */
+    public static function searchConfig()
+    {
+        return new HelperModule();
+    }
+    /**************************************************************************************************************************************************************************/
     /**
      * 根据指定KEY,获取value配置值
      * @param $key
@@ -27,6 +38,11 @@ class ConfigService
         return isset($config['value']) ? $config['value'] : '';
     }
 
+    /**
+     * @param $key
+     * @param $value
+     * @param string $desc
+     */
     public static function setValue($key,$value,$desc = '')
     {
         $model = ConfigAr::find();

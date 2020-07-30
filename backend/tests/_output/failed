@@ -1,0 +1,2 @@
+tests/unit/ChangeInitMenuTest.php:changeInitMenu
+tests/unit/aTest.php:testSomeFeature

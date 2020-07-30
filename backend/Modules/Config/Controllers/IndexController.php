@@ -8,6 +8,7 @@
 namespace backend\Modules\Config\Controllers;
 
 use backend\controllers\BaseController;
+use Service\ServiceHelper\ConfigService;
 
 /**
  * Class IndexController
@@ -25,6 +26,12 @@ class IndexController extends BaseController
             ['id' => 1,'name' => '1111'],
             ['id' => 2,'name' => '2222']
         ];
+        $condition = [
+            'data'=>'top'
+        ];
+//        $menu = MenuAr::find()->where("data LIKE '%\"top\"%'")->orderBy('order asc')->all();
+        $list = ConfigService::searchConfig()->getConfigSearch()->getList($condition);
+        var_dump($list);die;
         return $this->render('index',['list' => $list,'selected_id'=> $selected_id]);
     }
 
