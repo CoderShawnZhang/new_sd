@@ -20,7 +20,6 @@ class Helper1Module extends StrategyAbstract
     public function runModule()
     {
        $model = new Config1SearchModel();
-
        return $model;
     }
 }

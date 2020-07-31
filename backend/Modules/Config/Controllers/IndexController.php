@@ -9,6 +9,7 @@ namespace backend\Modules\Config\Controllers;
 
 use backend\controllers\BaseController;
 use Service\ServiceHelper\ConfigService;
+use Service\ServiceModules\ServiceMenu\ServiceMenu;
 
 /**
  * Class IndexController
@@ -17,22 +18,12 @@ use Service\ServiceHelper\ConfigService;
 class IndexController extends BaseController
 {
     /**
-     * @return string|void
+     * @return string
      */
     public function actionIndex()
     {
-        $selected_id = 1;
-        $list = [
-            ['id' => 1,'name' => '1111'],
-            ['id' => 2,'name' => '2222']
-        ];
-        $condition = [
-            'key'=>'top_menu_init'
-        ];
-//        $service = new ConfigService();
-//        $list = $service->searchOne($condition);
-        $list = ConfigService::searchOne($condition);
-        var_dump($list);die;
+        $selected_id = ConfigService::getTopInitMenu();
+        $list = ServiceMenu::getTopMenuList();
         return $this->render('index',['list' => $list,'selected_id'=> $selected_id]);
     }
 
@@ -42,6 +33,8 @@ class IndexController extends BaseController
     public function actionUpdate()
     {
         $post = $this->request->post();
-        var_dump($post);
+        $value = $post['init_top_menu'];
+        ConfigService::setValue('top_menu_init',$value);
+        //TODO 通过切面记录日志(所有)
     }
 }

@@ -58,6 +58,9 @@ final class ConfigService
             $model->value = $value;
             $model->desc = $desc;
             $model->save();
+        } else {
+            $config->value = $value;
+            $config->save();
         }
     }
 
@@ -68,7 +71,7 @@ final class ConfigService
     public static function getTopInitMenu()
     {
         $model = ConfigAr::find();
-        $config = $model->where(['key' => self::TOP_INIT_MENU_KEY])->one();
+        $config = $model->where(['key' => 'top_menu_init'])->one();
         return isset($config['value']) ? $config['value'] : '';
     }
 }
