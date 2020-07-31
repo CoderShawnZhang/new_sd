@@ -9,22 +9,27 @@
 namespace Service\ServiceHelper;
 
 
-use Service\ServiceBase\Service;
+use Service\ServiceBase\SearchModel;
 use Service\ServiceHelper\Models\Ar\ConfigAr;
-use Service\ServiceHelper\Modules\HelperModule;
-use Service\ServiceHelper\Modules\SearchModule\ConfigSearch;
 
-class ConfigService extends Service
+final class ConfigService
 {
-    const TOP_INIT_MENU_KEY = 'top_menu_init';
-
     /**
-     * @return HelperModule
+     * @param $data
+     * @return SearchModel
      */
-    public static function searchConfig()
+    public static function searchAll($data)
     {
-        return new HelperModule();
+        $c = new ConfigFacadeService($data);
+       return $c->getAll();
     }
+
+    public static function searchOne($data)
+    {
+        $c = new ConfigFacadeService($data);
+        return $c->getOne();
+    }
+
     /**************************************************************************************************************************************************************************/
     /**
      * 根据指定KEY,获取value配置值

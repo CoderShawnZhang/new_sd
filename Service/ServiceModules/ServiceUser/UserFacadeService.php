@@ -8,7 +8,7 @@
  */
 namespace Service\ServiceModules\ServiceUser;
 
-use Service\ServiceBase\BaseService;
+use Service\ServiceBase\Service;
 use Service\ServiceModules\ServiceUser\Models\UserLoginModel;
 
 /**
@@ -16,7 +16,7 @@ use Service\ServiceModules\ServiceUser\Models\UserLoginModel;
  * Class FacadeService
  * @package Service\ServiceModules\ServiceUser
  */
-final class UserFacadeService extends BaseService
+final class UserFacadeService extends Service
 {
     /**
      * @param $loginData

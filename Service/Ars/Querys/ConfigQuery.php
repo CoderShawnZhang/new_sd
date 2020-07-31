@@ -34,7 +34,7 @@ class ConfigQuery extends \yii\db\ActiveQuery
 
     public function topMenu()
     {
-        $this->andFilterWhere(['like','data','top']);
+        $this->andFilterWhere(['key'=>'top_menu_init']);
         return $this;
     }
 }

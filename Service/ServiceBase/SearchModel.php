@@ -15,10 +15,10 @@ abstract class SearchModel extends Model implements SearchModelInterface
     /**
      * @var ActiveQuery
      */
-    public $query;
+    protected $query;
 
 
-    public $_fields;
+    protected $_fields;
 
     /**
      * @param string $fields
@@ -35,12 +35,13 @@ abstract class SearchModel extends Model implements SearchModelInterface
 
     public function getOne()
     {
-        $this->query->one();
+        $this->query->createCommand()->getRawSql();
+        return $this->query->one();
     }
 
     public function getAll()
     {
-        $this->query->all();
+        return $this->query->all();
     }
 
     public function search()

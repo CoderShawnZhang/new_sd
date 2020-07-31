@@ -9,6 +9,8 @@
 namespace Service\ServiceBase;
 
 
+use yii\base\Component;
+
 class Service
 {
 

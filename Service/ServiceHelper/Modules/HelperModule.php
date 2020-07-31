@@ -7,29 +7,20 @@
  */
 namespace Service\ServiceHelper\Modules;
 
+use Service\ServiceHelper\Models\Search\ConfigSearchModel;
 use Service\ServiceHelper\Modules\SearchModule\ConfigSearch;
 use Service\ServiceHelper\Modules\SearchModule\ConfigSearch1;
 
 /**
- * 工具服务层模块
+ *
  * Class HelperModule
  * @package Service\ServiceHelper\Modules
  */
-class HelperModule
+class HelperModule extends StrategyAbstract
 {
-    /**
-     * @return ConfigSearch
-     */
-    public function getConfigSearch()
+    public function runModule()
     {
-        return new ConfigSearch();
-    }
-
-    /**
-     * @return ConfigSearch1
-     */
-    public function getConfigSearch1()
-    {
-        return new ConfigSearch1();
+        $model = new ConfigSearchModel();
+        return $model;
     }
 }

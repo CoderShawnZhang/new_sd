@@ -7,14 +7,11 @@ LoginAsset::register($this);
 <div id="wrapper" class="login-page">
     <div id="login_form" class="form">
         <?php $form = \yii\bootstrap\ActiveForm::begin(['id' => 'login','action' => '/Login/login/login']); ?>
-            <h2>管理登录</h2>
-<!--            <input type="text" placeholder="用户名" value="admin" name="username" />-->
-<!--            <input type="password" placeholder="密码" id="password" name="password"/>-->
-
+            <h2>搜灯管理后台</h2>
         <?= $form->field($model, 'username', [
             'template' => '{input}<span class="fa fa-user form-control-feedback"></span>{error}',
             'errorOptions' => ['tag' => 'span','class' => 'help-block redcolor error-tips'],
-            'options' => ['class' => "form-group has-feedback "],
+            'options' => ['class' => "form-group has-feedback ",'style'=>"margin-top:20px;"],
         ])->input('username', ['placeholder' => '账号']);
         ?>
         <?= $form->field($model, 'password', [

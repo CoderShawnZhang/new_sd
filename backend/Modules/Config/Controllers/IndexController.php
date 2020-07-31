@@ -27,10 +27,11 @@ class IndexController extends BaseController
             ['id' => 2,'name' => '2222']
         ];
         $condition = [
-            'data'=>'top'
+            'key'=>'top_menu_init'
         ];
-//        $menu = MenuAr::find()->where("data LIKE '%\"top\"%'")->orderBy('order asc')->all();
-        $list = ConfigService::searchConfig()->getConfigSearch()->getList($condition);
+//        $service = new ConfigService();
+//        $list = $service->searchOne($condition);
+        $list = ConfigService::searchOne($condition);
         var_dump($list);die;
         return $this->render('index',['list' => $list,'selected_id'=> $selected_id]);
     }

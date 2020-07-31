@@ -11,5 +11,5 @@ namespace Service\ServiceBase\Interfaces;
 
 interface SearchModuleInterface
 {
-    public static function getSearchClass();
+    public function getSearchClass();
 }

@@ -12,7 +12,7 @@ use Service\ServiceHelper\Models\Ar\ConfigAr;
 
 class ConfigSearchModel extends SearchModel
 {
-    public $data;
+    public $key;
 
     public function __construct(array $config = [])
     {
@@ -22,7 +22,7 @@ class ConfigSearchModel extends SearchModel
     function rules()
     {
         return [
-            [['data'], 'string'],
+            [['key'], 'string'],
         ];
     }
     public function setCondition()
