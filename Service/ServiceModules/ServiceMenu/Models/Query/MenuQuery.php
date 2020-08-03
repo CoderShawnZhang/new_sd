@@ -5,7 +5,7 @@
  * Date: 2020-07-31
  * Time: 17:10
  */
-namespace Service\ServiceModules\ServiceMenu\Query;
+namespace Service\ServiceModules\ServiceMenu\Models\Query;
 
 use yii\db\ActiveQuery;
 
@@ -24,7 +24,7 @@ final class MenuQuery extends ActiveQuery
      */
     public function prepare($builder)
     {
-        $this->andWhere(['status'=>1]);
+//        $this->andWhere(['status'=>1]);
         return parent::prepare($builder);
     }
 
@@ -32,7 +32,7 @@ final class MenuQuery extends ActiveQuery
      * @return $this
      */
     public function topTag(){
-        $this->andWhere(['like',$this->tableName.'.data','%top%']);
+        $this->andWhere(['like',$this->tableName.'.data','top']);
         return $this;
     }
 }

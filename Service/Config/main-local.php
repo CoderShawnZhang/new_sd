@@ -12,6 +12,14 @@ $config = [
             'password' => 123456,
             'charset' => 'utf8',
         ],
+        'old_sodeng' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=120.78.150.212;dbname=sodeng;port=3306',
+            'username' => 'lmt',
+            'password' => 'adminlmt',
+            'charset' => 'utf8',
+            'tablePrefix' => 'oa_'
+        ],
         //css,js资源文件不进行缓存操作
         'assetManager' => [
             'hashCallback' => function ($path) {

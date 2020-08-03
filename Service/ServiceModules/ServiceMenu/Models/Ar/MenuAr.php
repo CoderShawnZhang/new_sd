@@ -8,7 +8,7 @@
 namespace Service\ServiceModules\ServiceMenu\Models\Ar;
 
 use Service\Ars\Tables\MenuTable;
-use Service\ServiceModules\ServiceMenu\Query\MenuQuery;
+use Service\ServiceModules\ServiceMenu\Models\Query\MenuQuery;
 
 /**
  * Class MenuAr

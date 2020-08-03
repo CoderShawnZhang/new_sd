@@ -39,7 +39,7 @@ final class ConfigService
     public static function getValue($key)
     {
         $model = ConfigAr::find();
-        $config = $model->where(['key' => $key])->one();
+        $config = $model->where(['key' => $key])->one();//TODO 需要写到模型了
         return isset($config['value']) ? $config['value'] : '';
     }
 
@@ -51,7 +51,7 @@ final class ConfigService
     public static function setValue($key,$value,$desc = '')
     {
         $model = ConfigAr::find();
-        $config = $model->where(['key' => $key])->one();
+        $config = $model->where(['key' => $key])->one();//TODO 需要写到模型里
         if(empty($config)){
             $model = new ConfigAr();
             $model->key = $key;
@@ -71,7 +71,7 @@ final class ConfigService
     public static function getTopInitMenu()
     {
         $model = ConfigAr::find();
-        $config = $model->where(['key' => 'top_menu_init'])->one();
+        $config = $model->where(['key' => 'top_menu_init'])->one();//TODO 需要写到模型了
         return isset($config['value']) ? $config['value'] : '';
     }
 }
