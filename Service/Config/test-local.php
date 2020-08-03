@@ -12,11 +12,11 @@ return yii\helpers\ArrayHelper::merge(
             // 测试数据库
             'db' => [
                 'class' => 'yii\db\Connection',
-                'dsn' => 'mysql:host=127.0.0.1;dbname=dengbei',
+                'dsn' => 'mysql:host=127.0.0.1;dbname=dengbei_test',
                 'username' => 'root',
                 'password' => '123456',
                 'charset' => 'utf8',
-                'tablePrefix' => ''
+                'tablePrefix' => 'sd_'
             ],
             'user' => [
                 'identityClass' => 'app\models\User', // User must implement the IdentityInterface

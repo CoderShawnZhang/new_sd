@@ -15,7 +15,7 @@ modules:
     config:
         Yii2:
             configFile: '../Service/config/test-local.php'
-            cleanup: false
+            cleanup: true
 extensions:
     enabled:
         - Codeception\Extension\RunFailed

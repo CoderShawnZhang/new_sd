@@ -30,6 +30,7 @@ class OldUserService
     }
 
     /**
+     *
      * 通过用户id检查用户角色
      *
      * @param $user_id
