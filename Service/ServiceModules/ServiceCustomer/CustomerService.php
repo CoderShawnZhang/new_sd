@@ -74,7 +74,7 @@ class CustomerService extends Service
         $customerWx->nickname = !isset($oldUser['user_nickname']) || empty($oldUser['user_nickname']) ? $oldUser['user_name'] : $oldUser['user_nickname'];
         $customerWx->wx_openid = $oldUser['wx_openid'];
         $customerWx->xcx_openid = $oldUser['wxconnect_openid'];
-        $customerWx->unionId = $oldUser['wx_unionid'];
+        $customerWx->unionId = isset($oldUser['wx_unionid']) ? $oldUser['wx_unionid'] : '';
         $customerWx->avatar_url = $oldUser['user_photo'];
         $customerWx->gender = $oldUser['user_sex'];
         $customerWx->province = isset($oldUser['user_province']) ? $oldUser['user_province'] : 0;

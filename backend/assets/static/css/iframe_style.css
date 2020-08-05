@@ -5,3 +5,12 @@
 .label_140px{width: 140px;}
 .label_150px{width: 150px;}
 
+
+
+
+/*标签颜色 样式*/
+
+/*角色标签*/
+.layui-bg-nobind{
+    background-color: #668B8B!important;
+}
