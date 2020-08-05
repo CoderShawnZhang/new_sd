@@ -82,7 +82,7 @@
     'enter_login' => ',1,2,3,4,5,',
     'user_remarks' => '',
     'user_status' => '6',
-    'user_last_time' => '1596339870',
+    'user_last_time' => '1596598865',
     'user_last_ip' => '163.179.45.166',
     'user_buy_time' => '1596078894',
     'user_update_time' => '1594974399',

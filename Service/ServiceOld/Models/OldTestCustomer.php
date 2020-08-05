@@ -3,14 +3,18 @@
  * Created by PhpStorm.
  * User: zhanghongbo
  * Date: 2020-08-03
- * Time: 09:37
+ * Time: 16:17
  */
+
 namespace Service\ServiceOld\Models;
 
-class OldUser extends OldBaseModel
+
+use yii\db\ActiveRecord;
+
+class OldTestCustomer extends ActiveRecord
 {
     public static function tableName()
     {
-        return '{{%user}}';
+        return '{{%user1}}';
     }
 }

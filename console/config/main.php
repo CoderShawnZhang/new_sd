@@ -37,14 +37,7 @@ return [
                     'levels' => ['error', 'warning'],
                 ],
             ],
-        ],
-        'db' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=127.0.0.1;dbname=sdadmin;port=3306',
-            'username' => 'root',
-            'password' => 'sodeng123#+',
-            'charset' => 'utf8',
-        ],
+        ]
     ],
     'params' => $params,
 ];

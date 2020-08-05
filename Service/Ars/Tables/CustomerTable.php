@@ -8,6 +8,7 @@ use Yii;
  * This is the model class for table "{{%customer}}".
  *
  * @property int $id
+ * @property integer $c_id 客户编号
  * @property string $user_name 客户认证，权限，角色表
  * @property string $password
  * @property string|null $email

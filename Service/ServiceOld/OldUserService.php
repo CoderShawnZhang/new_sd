@@ -9,7 +9,7 @@ namespace Service\ServiceOld;
 
 use common\models\User;
 use Service\ServiceBase\Constants\UserConstant;
-use Service\ServiceOld\Models\OldUser;
+use Service\ServiceOld\Models\OldCustomer;
 
 class OldUserService
 {
@@ -38,13 +38,13 @@ class OldUserService
      */
     private static function checkUserRoleById($user_id)
     {
-        $userInfo = OldUser::find()->where(['user_id' => $user_id])->one();
+        $userInfo = OldCustomer::find()->where(['user_id' => $user_id])->one();
         //代理商
         //user_rank_id=30
         //user_status=6
         //代理商条件1  $userInfo['user_grade'] == 80 ，$is_agent=M('User')->where("agent_ids=".$v["user_id"])->find(); user_authentication=1
 
-        $is_agent = OldUser::find()->where(['agent_ids' => $user_id])->one();
+        $is_agent = OldCustomer::find()->where(['agent_ids' => $user_id])->one();
         if($userInfo['user_grade'] == 80 && $userInfo['user_authentication'] == 1 && !empty($is_agent)){
             return UserConstant::USER_ROLE_IS_AGENT;
         }
@@ -83,28 +83,28 @@ class OldUserService
         }
         //加盟
         if($role_id == UserConstant::USER_ROLE_IS_ALLIANCE){
-            $userInfo = OldUser::find()->where(['user_id' => $user_id])->one();
+            $userInfo = OldCustomer::find()->where(['user_id' => $user_id])->one();
             if($userInfo['agent_id'] > 0){
                 return $userInfo['agent_id'];
             }
         }
         //合伙人
         if($role_id == UserConstant::USER_ROLE_IS_PARTNER){
-            $userInfo = OldUser::find()->where(['user_id' => $user_id])->one();
+            $userInfo = OldCustomer::find()->where(['user_id' => $user_id])->one();
             if($userInfo['partners_id'] > 0){
                 return $userInfo['partners_id'];
             }
         }
         //实体认证（上级一定是代理）
         if($role_id == UserConstant::USER_ROLE_IS_ENTITY){
-            $userInfo = OldUser::find()->where(['user_id' => $user_id])->one();
+            $userInfo = OldCustomer::find()->where(['user_id' => $user_id])->one();
             if($userInfo['agent_id'] > 0){
                 return $userInfo['agent_id'];
             }
         }
         //合伙人客户
         if($role_id == UserConstant::USER_ROLE_IS_PARTNER_CUSTOMER){
-            $userInfo = OldUser::find()->where(['user_id' => $user_id])->one();
+            $userInfo = OldCustomer::find()->where(['user_id' => $user_id])->one();
             if($userInfo['partnersid'] > 0){
                 return $userInfo['partnersid'];
             }

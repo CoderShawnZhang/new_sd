@@ -9,6 +9,7 @@ namespace backend\Modules\Config\Controllers;
 
 use backend\controllers\BaseController;
 use Service\ServiceHelper\ConfigService;
+use Service\ServiceModules\ServiceCustomer\Models\CustomerModel;
 use Service\ServiceModules\ServiceMenu\ServiceMenu;
 
 /**
@@ -22,6 +23,7 @@ class IndexController extends BaseController
      */
     public function actionIndex()
     {
+
         $selected_id = ConfigService::getTopInitMenu();
         $list = ServiceMenu::getTopMenuList();
         return $this->render('index',['list' => $list,'selected_id'=> $selected_id]);

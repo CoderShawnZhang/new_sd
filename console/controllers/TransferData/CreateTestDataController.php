@@ -8,6 +8,7 @@ namespace console\controllers\TransferData;
 
 
 use console\controllers\BaseController;
+use Service\ServiceOld\Models\OldCustomer;
 use Service\ServiceOld\Models\OldUser;
 
 class CreateTestDataController extends BaseController
@@ -18,7 +19,7 @@ class CreateTestDataController extends BaseController
      */
     public function actionCreateUserFixtureData()
     {
-        $list = OldUser::find()->where(['user_id' => 700000])->asArray()->all();
+        $list = OldCustomer::find()->where(['user_id' => 700000])->asArray()->all();
         $string = '<?php return ' . var_export($list, true) . ';';
         $dir = dirname(dirname(dirname(__DIR__))) . '/Service/tests/_data/OldUserData.php';
         file_put_contents($dir, $string);

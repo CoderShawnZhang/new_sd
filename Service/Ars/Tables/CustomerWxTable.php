@@ -24,7 +24,7 @@ use Yii;
  * @property int $created_at
  * @property string $updated_at
  *
- * @property Customer $id0
+// * @property Customer $id0
  */
 class CustomerWxTable extends \yii\db\ActiveRecord
 {
@@ -43,12 +43,11 @@ class CustomerWxTable extends \yii\db\ActiveRecord
     {
         return [
             [['customer_id', 'nickname', 'wx_openid', 'unionId'], 'required'],
-            [['customer_id', 'gender', 'is_wx_subscribe', 'wx_subscribe_time', 'created_at'], 'integer'],
+            [['customer_id', 'gender', 'is_wx_subscribe', 'wx_subscribe_time', 'created_at', 'province', 'city','mobile'], 'integer'],
             [['updated_at'], 'safe'],
-            [['nickname', 'wx_openid', 'xcx_openid', 'unionId', 'province', 'city'], 'string', 'max' => 45],
+            [['nickname', 'wx_openid', 'xcx_openid', 'unionId'], 'string', 'max' => 45],
             [['avatar_url', 'watermark'], 'string', 'max' => 255],
-            [['mobile'], 'string', 'max' => 20],
-            [['id'], 'exist', 'skipOnError' => true, 'targetClass' => Customer::className(), 'targetAttribute' => ['id' => 'id']],
+//            [['id'], 'exist', 'skipOnError' => true, 'targetClass' => Customer::className(), 'targetAttribute' => ['id' => 'id']],
         ];
     }
 
@@ -84,7 +83,7 @@ class CustomerWxTable extends \yii\db\ActiveRecord
      */
     public function getId0()
     {
-        return $this->hasOne(Customer::className(), ['id' => 'id']);
+//        return $this->hasOne(Customer::className(), ['id' => 'id']);
     }
 
     /**

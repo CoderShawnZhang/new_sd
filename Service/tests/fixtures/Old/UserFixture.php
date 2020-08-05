@@ -11,5 +11,5 @@ use yii\test\ActiveFixture;
 
 class UserFixture extends ActiveFixture
 {
-    public $modelClass = 'Service\ServiceOld\Models\OldTestUser';
+    public $modelClass = 'Service\ServiceOld\Models\OldTestCustomer';
 }

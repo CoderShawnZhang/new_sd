@@ -2,11 +2,8 @@
 
 use Service\Ars\Tables\CustomerTable;
 use Service\ServiceBase\Constants\UserConstant;
-use Service\ServiceModules\ServiceUser\Models\CreateUserModel;
-use Service\ServiceModules\ServiceUser\Models\UserBaseModel;
-use Service\ServiceOld\Models\OldFwWarehouseInfo;
-use Service\ServiceOld\Models\OldTestUser;
-use Service\ServiceOld\Models\OldTestWarehouseInfo;
+use Service\ServiceModules\ServiceCustomer\CustomerService;
+use Service\ServiceOld\Models\OldTestCustomer;
 use Service\ServiceOld\OldUserPartnerFastService;
 
 /**
@@ -100,27 +97,9 @@ class checkRoleTest extends \Codeception\Test\Unit
         $this->assertEquals($item['cur_user_partner_last_uid'],$return_partner_last,'当前用户上上级id:' . $return_partner_last.';验证用户上上级id:'.$item['cur_user_partner_last_uid']);
         $this->assertEquals($item['cur_user_partner_fast_role'],$return_fast_role_id,'当前用户上级角色:' . $return_fast_role_id.';验证用户上级角色:'.$item['cur_user_partner_fast_role']);
         $this->assertEquals($item['cur_user_partner_last_role'],$return_last_role_id,'当前用户上上级角色:' . $return_fast_role_id.';验证用户上上级角色:'.$item['cur_user_partner_last_role']);
-        $this->createNewUser($item['cur_user_id'],$cur_role_id,$return_partner_fast,$return_partner_last);
+//        $this->createNewUser($item['cur_user_id'],$cur_role_id,$return_partner_fast,$return_partner_last);
+        CustomerService::transDataCustomer($item['cur_user_id']);
     }
 
-    public function createNewUser($user_id,$cur_role_id,$return_partner_fast,$return_partner_last)
-    {
-        $oldUser = OldTestUser::find()->where(['user_id' => $user_id])->one();
-        $newModel = new CustomerTable();
-        $newModel->user_name = $oldUser['user_name'];
-        $newModel->password = md5(123456);
-        $newModel->email = $oldUser['user_email'];
-        $newModel->role = $cur_role_id;
-        $newModel->parent_level_1 = $return_partner_fast;
-        $newModel->parent_level_2 = $return_partner_last;
-        $newModel->return_money_ratio = $oldUser['partner_rate'];
-        $newModel->last_login_at = $oldUser['user_last_time'];
-        $newModel->on_line = 0;
-        $newModel->status = 1;
-        $newModel->access_token = $oldUser['access_token'];
-        $newModel->created_at = $oldUser['user_create_time'];
-        $newModel->updated_at = $oldUser['user_update_time'];
-        $newModel->save();
-        var_dump($newModel->getErrors());die;
-    }
+
 }
