@@ -26,7 +26,7 @@ class UserTableController extends BaseController
 //        $user_id = 1033644;
         $model = OldCustomer::find();
 //        $list = $model->where(['in','user_id',[1033884,1033883,1033882]])->all();
-        $list = $model->where(['in','user_id',[1033881,1033889,1033861,1024600]])->all();
+        $list = $model->where(['in','user_id',[1033881,1033889,1033861,1029638]])->all();
         $trans = \Yii::$app->db->beginTransaction();
         try{
             if(empty($list)){

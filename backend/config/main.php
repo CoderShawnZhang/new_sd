@@ -59,7 +59,10 @@ return [
         ],
         'Config' => [
             'class' => 'backend\Modules\Config\Module',
-        ]
+        ],
+        'Customer' => [
+            'class' => 'backend\Modules\Customer\Module',
+        ],
     ],
     'components' => [
         //css,js资源文件不进行缓存操作
