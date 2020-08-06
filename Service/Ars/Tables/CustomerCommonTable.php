@@ -13,16 +13,16 @@ use Yii;
  * @property float $order_buy_money
  * @property float|null $order_refund_money
  * @property int|null $order_count
- * @property float|null $this_month_buymoney
- * @property float|null $last_month_buymoney
- * @property float|null $three_month_buymoney
+ * @property float|null $this_month_buy_money
+ * @property float|null $last_month_buy_money
+ * @property float|null $three_month_buy_money
  * @property float|null $is_three_money_buy
- * @property float|null $is_three_month_notbuy
+ * @property float|null $is_three_month_not_buy
  * @property int|null $is_year_buy
  * @property int|null $status
  * @property int|null $last_login_time
  * @property int|null $last_buy_time
- * @property int|null $is_address_trransfer
+ * @property int|null $is_address_transfer
  * @property int|null $is_store
  *
  * @property Customer $customer
@@ -44,9 +44,9 @@ class CustomerCommonTable extends \yii\db\ActiveRecord
     {
         return [
             [['customer_id', 'order_buy_money'], 'required'],
-            [['customer_id', 'service_id', 'order_count', 'is_year_buy', 'status', 'last_login_time', 'last_buy_time', 'is_address_trransfer', 'is_store'], 'integer'],
-            [['order_buy_money', 'order_refund_money', 'this_month_buymoney', 'last_month_buymoney', 'three_month_buymoney', 'is_three_money_buy', 'is_three_month_notbuy'], 'number'],
-            [['customer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Customer::className(), 'targetAttribute' => ['customer_id' => 'id']],
+            [['customer_id', 'service_id', 'order_count', 'is_year_buy', 'status', 'last_login_time', 'last_buy_time', 'is_address_transfer', 'is_store'], 'integer'],
+            [['order_buy_money', 'order_refund_money', 'this_month_buy_money', 'last_month_buy_money', 'three_month_buy_money', 'is_three_money_buy', 'is_three_month_not_buy'], 'number'],
+//            [['customer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Customer::className(), 'targetAttribute' => ['customer_id' => 'id']],
         ];
     }
 
@@ -62,16 +62,16 @@ class CustomerCommonTable extends \yii\db\ActiveRecord
             'order_buy_money' => 'Order Buy Money',
             'order_refund_money' => 'Order Refund Money',
             'order_count' => 'Order Count',
-            'this_month_buymoney' => 'This Month Buymoney',
-            'last_month_buymoney' => 'Last Month Buymoney',
-            'three_month_buymoney' => 'Three Month Buymoney',
+            'this_month_buy_money' => 'This Month Buymoney',
+            'last_month_buy_money' => 'Last Month Buymoney',
+            'three_month_buy_money' => 'Three Month Buymoney',
             'is_three_money_buy' => 'Is Three Money Buy',
-            'is_three_month_notbuy' => 'Is Three Month Notbuy',
+            'is_three_month_not_buy' => 'Is Three Month Notbuy',
             'is_year_buy' => 'Is Year Buy',
             'status' => 'Status',
             'last_login_time' => 'Last Login Time',
             'last_buy_time' => 'Last Buy Time',
-            'is_address_trransfer' => 'Is Address Trransfer',
+            'is_address_transfer' => 'Is Address Transfer',
             'is_store' => 'Is Store',
         ];
     }
@@ -83,7 +83,7 @@ class CustomerCommonTable extends \yii\db\ActiveRecord
      */
     public function getCustomer()
     {
-        return $this->hasOne(Customer::className(), ['id' => 'customer_id']);
+//        return $this->hasOne(Customer::className(), ['id' => 'customer_id']);
     }
 
     /**

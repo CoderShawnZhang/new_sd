@@ -15,9 +15,12 @@ class UserService
 {
     /**
      * 获取角色样式
+     *
+     * @param $roleId
+     * @return mixed|string
      */
-    public static function getRoleStyle(){
-        return [
+    public static function getRoleStyle($roleId){
+        $roleStyleArray = [
             UserConstant::USER_ROLE_IS_AGENT => 'layui-badge',
             UserConstant::USER_ROLE_IS_ALLIANCE => 'layui-badge layui-bg-orange',
             UserConstant::USER_ROLE_IS_PARTNER => 'layui-badge layui-bg-green',
@@ -26,5 +29,6 @@ class UserService
             UserConstant::USER_ROLE_IS_NONE => 'layui-badge layui-bg-nobind',
             UserConstant::USER_ROLE_IS_OTHER => 'layui-badge layui-bg-gray'
         ];
+        return isset($roleStyleArray[$roleId]) ? $roleStyleArray[$roleId] : '';
     }
 }

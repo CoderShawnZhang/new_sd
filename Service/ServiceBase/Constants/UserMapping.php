@@ -11,9 +11,13 @@ namespace Service\ServiceBase\Constants;
 
 class UserMapping
 {
-    public static function getUserRoleName()
+    /**
+     * @param $roleId
+     * @return mixed|string
+     */
+    public static function getUserRoleName($roleId)
     {
-        return [
+        $roleArray = [
             UserConstant::USER_ROLE_IS_AGENT=>UserConstant::USER_ROLE_TXT_AGENT,
             UserConstant::USER_ROLE_IS_ALLIANCE=>UserConstant::USER_ROLE_TXT_ALLIANCE,
             UserConstant::USER_ROLE_IS_PARTNER => UserConstant::USER_ROLE_TXT_PARTNER,
@@ -23,5 +27,6 @@ class UserMapping
             UserConstant::USER_ROLE_IS_OTHER => UserConstant::USER_ROLE_TXT_OTHER,
             0 => '无'
         ];
+        return isset($roleArray[$roleId]) ? $roleArray[$roleId] : '';
     }
 }

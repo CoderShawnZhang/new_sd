@@ -16,7 +16,7 @@ class OldUserPartnerFastService
     public static function getPartnerFastRole($cur_user_id)
     {
         list($role_id,$partner_fast) = OldUserService::getUserRole($cur_user_id);
-        $roleMap = UserMapping::getUserRoleName();
-        return [$role_id,$partner_fast,$cur_user_id.'角色：'.$roleMap[$role_id]];
+        $roleName = UserMapping::getUserRoleName($role_id);
+        return [$role_id,$partner_fast,$cur_user_id.'角色：'.$roleName];
     }
 }

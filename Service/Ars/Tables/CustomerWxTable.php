@@ -42,7 +42,7 @@ class CustomerWxTable extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['customer_id', 'nickname', 'wx_openid', 'unionId'], 'required'],
+            [['customer_id', 'nickname'], 'required'],
             [['customer_id', 'gender', 'is_wx_subscribe', 'wx_subscribe_time', 'created_at', 'province', 'city','mobile'], 'integer'],
             [['updated_at'], 'safe'],
             [['nickname', 'wx_openid', 'xcx_openid', 'unionId'], 'string', 'max' => 45],

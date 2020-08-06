@@ -15,4 +15,9 @@ class CustomerModel extends CustomerTable
     {
         return '{{%customer}}';
     }
+
+    public function getUserRole()
+    {
+//       return $this->hasOne(CustomerModel::className(),['parent_level_1' => 'c_id']);
+    }
 }

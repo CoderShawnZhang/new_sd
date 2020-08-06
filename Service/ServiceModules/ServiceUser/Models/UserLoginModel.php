@@ -8,6 +8,7 @@
 namespace Service\ServiceModules\ServiceUser\Models;
 
 use common\models\User;
+use Service\Ars\Tables\UserTable;
 use Service\ServiceModules\ServiceUser\Models\Ar\UserAr;
 use Service\ServiceModules\ServiceUser\Models\Ar\UserIdentity;
 use yii\db\ActiveRecord;
@@ -17,7 +18,7 @@ use yii\db\ActiveRecord;
  * @package Service\ServiceModules\ServiceUser\Models
  * @property string $password write-only password
  */
-class UserLoginModel extends UserAr
+class UserLoginModel extends UserTable
 {
     const ACCOUNT_TYPE_DISABLE =  0;//账号不允许登录类型
     public $rememberMe = true;
@@ -27,6 +28,7 @@ class UserLoginModel extends UserAr
         return [
             [['username'],'string'],
             ['password', 'required', 'message' => '密码不能为空！'],
+            [['password_hash'], 'string', 'max' => 255],
             ['password', 'validatePassword'],
         ];
     }
@@ -102,7 +104,8 @@ class UserLoginModel extends UserAr
      */
     protected function getUserInfo()
     {
-        return UserIdentity::getUserInfo('admin');
+        $t = new UserIdentity();
+        return $t->getUserInfo($this->username);
     }
 
     public function checkLoginStatus($mobile){

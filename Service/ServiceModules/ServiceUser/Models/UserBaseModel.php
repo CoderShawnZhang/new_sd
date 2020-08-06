@@ -9,9 +9,11 @@
 namespace Service\ServiceModules\ServiceUser\Models;
 
 
-use Service\ServiceModules\ServiceUser\Models\Ar\UserAr;
+//use Service\ServiceModules\ServiceUser\Models\Ar\UserAr;
 
-class UserBaseModel extends UserAr
+use Service\Ars\Tables\UserTable;
+
+class UserBaseModel extends UserTable
 {
 
 }

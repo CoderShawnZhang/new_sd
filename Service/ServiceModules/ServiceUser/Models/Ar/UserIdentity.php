@@ -6,7 +6,8 @@
 namespace Service\ServiceModules\ServiceUser\Models\Ar;
 
 
-use yii\db\ActiveRecord;
+use Service\Ars\Tables\CustomerTable;
+use Service\Ars\Tables\UserTable;
 use yii\web\IdentityInterface;
 use Yii;
 /**
@@ -15,7 +16,7 @@ use Yii;
  * @property string $password write-only password
  * @property string $username
  */
-class UserIdentity extends ActiveRecord implements IdentityaInterface
+class UserIdentity extends UserTable implements IdentityaInterface
 {
     const USER_STATUS_0 = 10; // 正常 10 RBAC初始化user表status默认值
     const USER_STATUS_1 = 11; // 停用
@@ -27,18 +28,29 @@ class UserIdentity extends ActiveRecord implements IdentityaInterface
         return '{{%user}}';
     }
 
-    public static function getUserInfo($username)
+    public function getUserInfo($username)
     {
-        return static::find()->Where(['username' => $username])->one();
+        $model = self::find()->Where(['username' => $username])->one();
+        if(!empty($model)) {
+            $this->password_hash = $model->password_hash;
+            $this->password = $model->password;
+        }
+        return $model;
     }
     public function validatePassword($password)
     {
-        return \Yii::$app->security->validatePassword($password, $this->password);
+        $res = \Yii::$app->security->validatePassword($password, $this->password_hash,$this->password);
+        return $res;
     }
 
-    public function setPassword($password)
+    public function setPasswordHash($password)
     {
-        $this->password = \Yii::$app->security->generatePasswordHash($password);
+        $this->password_hash = \Yii::$app->security->generatePasswordHash($password);
+    }
+
+    public function setPassword($password){
+        $this->setPasswordHash($password);
+        $this->password = Md5($this->password_hash);
     }
 
     /**

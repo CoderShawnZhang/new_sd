@@ -15,6 +15,8 @@ use Yii;
  * @property int $role
  * @property int|null $parent_level_1
  * @property int|null $parent_level_2
+ * @property int|null $balance
+ * @property int|null $red_balance
  * @property float $return_money_ratio 返现比率(百分比)
  * @property int|null $last_login_at
  * @property int $on_line
@@ -49,7 +51,6 @@ class CustomerTable extends \yii\db\ActiveRecord
             [['return_money_ratio'], 'number'],
             [['user_name', 'password', 'email'], 'string', 'max' => 45],
             [['access_token'], 'string', 'max' => 100],
-            [['access_token'], 'unique'],
 //            [['id'], 'exist', 'skipOnError' => true, 'targetClass' => CustomerRole::className(), 'targetAttribute' => ['id' => 'id']],
         ];
     }
@@ -61,7 +62,7 @@ class CustomerTable extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'user_name' => '客户认证，权限，角色表',
+            'user_name' => '客户名称',
             'password' => 'Password',
             'email' => 'Email',
             'role' => 'Role',

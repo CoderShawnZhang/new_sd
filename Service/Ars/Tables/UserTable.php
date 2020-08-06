@@ -2,8 +2,6 @@
 
 namespace Service\Ars\Tables;
 
-use Yii;
-
 /**
  * This is the model class for table "user".
  *
