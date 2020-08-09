@@ -23,4 +23,26 @@ class BaseController extends Controller
             $this->redirect(['site/index']);
         }
     }
+
+    /**
+     * @param $dataArray
+     * @param $count
+     * @param int $limit
+     * @return array
+     */
+    public function layUiTableData($dataArray,$count,$limit = 20)
+    {
+        $pageInfo = [
+            'limit' => $limit,
+            'page_current' => 1,
+            'page_num' => $count/$limit
+        ];
+        return $list = [
+            'code'  => 0,
+            'msg'   => '',
+            'count' => $count/2,
+            'info'  => $pageInfo,
+            'data'  => $dataArray,
+        ];
+    }
 }

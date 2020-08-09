@@ -2,6 +2,7 @@
 
 namespace Service\Ars\Tables;
 
+use Service\ServiceModules\ServiceCustomer\Models\CustomerCommonModel;
 use Yii;
 
 /**
@@ -47,7 +48,7 @@ class CustomerTable extends \yii\db\ActiveRecord
     {
         return [
             [['user_name', 'password', 'role', 'access_token', 'created_at'], 'required'],
-            [['role', 'parent_level_1', 'parent_level_2', 'last_login_at', 'on_line', 'status', 'created_at', 'updated_at'], 'integer'],
+            [['role', 'c_id','parent_level_1', 'parent_level_2', 'last_login_at', 'on_line', 'status', 'created_at', 'updated_at'], 'integer'],
             [['return_money_ratio'], 'number'],
             [['user_name', 'password', 'email'], 'string', 'max' => 45],
             [['access_token'], 'string', 'max' => 100],
@@ -62,6 +63,7 @@ class CustomerTable extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'c_id' => 'c_id',
             'user_name' => '客户名称',
             'password' => 'Password',
             'email' => 'Email',
@@ -88,15 +90,12 @@ class CustomerTable extends \yii\db\ActiveRecord
 //        return $this->hasOne(CustomerRole::className(), ['id' => 'id']);
     }
 
-    /**
-     * Gets query for [[CustomerCommons]].
-     *
-     * @return \yii\db\ActiveQuery|\Service\Ars\Querys\CustomerCommonQuery
-     */
-    public function getCustomerCommons()
-    {
-//        return $this->hasMany(CustomerCommon::className(), ['customer_id' => 'id']);
-    }
+
+
+//    public function getCustomerCommon()
+//    {
+//        return $this->hasOne(CustomerCommonTable::class,['customer_id','id']);
+//    }
 
     /**
      * Gets query for [[CustomerReturnMoneys]].

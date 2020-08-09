@@ -2,15 +2,10 @@
 namespace console\controllers\TransferData;
 
 use console\controllers\BaseController;
-use console\models\old_db\Test;
 use Service\Exception\BaseException;
-use Service\ServiceBase\Constants\UserMapping;
 use Service\ServiceModules\ServiceCustomer\CustomerService;
 use Service\ServiceModules\ServiceCustomer\Models\CustomerModel;
 use Service\ServiceOld\Models\OldCustomer;
-use Service\ServiceOld\Models\OldUser;
-use Service\ServiceOld\OldUserPartnerFastService;
-use Service\ServiceOld\OldUserService;
 use yii\helpers\ArrayHelper;
 
 /**

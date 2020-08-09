@@ -1,5 +1,3 @@
-<!--模版页-->
-
 <div class="layui-collapse" lay-filter="test">
     <div class="layui-colla-item">
         <h2 class="layui-colla-title" style="text-decoration: underline;color: red;">高级搜索</h2>
@@ -108,33 +106,22 @@
 </div>
 
 
-<table class="layui-hide" id="test" lay-filter="customer_filter"></table>
+<table class="layui-hide" id="test"></table>
 
-<script type="text/html" id="parentLevel1">
-    <div>{{d.parent_1_user_name}}-{{d.parent_level_1_txt}}</div>
-</script>
-<script type="text/html" id="auth">
-    <input type="checkbox" name="sex" value="{{d.is_auth}}" lay-skin="switch" lay-text="是|否" lay-filter="sexDemo">
-</script>
-<script type="text/html" id="service">
-    <div class="layui-badge layui-bg-orange">{{d.service_txt}}</div>
-</script>
-<script type="text/html" id="parentLevel2">
-    <div>{{d.parent_2_user_name}}-{{d.parent_level_2_txt}}</div>
-</script>
 <!--列表顶部操作组-->
 <script type="text/html" id="toolbarDemo">
     <div class="layui-btn-container">
-        <button class="layui-btn layui-btn-sm" lay-event="click_event">显示更多</button>
+        <button class="layui-btn layui-btn-sm" lay-event="click_event">操作按钮</button>
         <button class="layui-btn layui-btn-sm" lay-event="click_event">操作按钮</button>
         <button class="layui-btn layui-btn-sm" lay-event="click_event">操作按钮</button>
     </div>
 </script>
 <!--列表右侧操作组-->
 <script type="text/html" id="barDemo">
-    <a class="layui-btn layui-btn-xs" lay-event="edit" data-open='{:url("Customer/index/edit)}' data-title="编辑{{d.user_name}}" data-width="80%" data-height="100%">编辑</a>
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
+
 <!-------------------------------------------资源文件------------------------------------------->
 <!--引入javascript-->
 <?php $this->registerJs($this->render("/javascript/index.js"),yii\web\View::POS_END); ?>

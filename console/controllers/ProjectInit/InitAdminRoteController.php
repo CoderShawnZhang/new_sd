@@ -9,7 +9,8 @@
 namespace console\controllers\ProjectInit;
 
 use console\controllers\BaseController;
-use Service\ServiceModules\ServiceUser\Models\Ar\UserAr;
+use Service\Ars\Tables\UserTable;
+use Service\ServiceModules\ServiceUser\Models\UserModel;
 
 /**
  * 初始化配置管理员角色权限
@@ -52,7 +53,7 @@ class InitAdminRoteController extends BaseController
         $auth->addChild($admin,$topMenu);
 
         //分配
-        $user = UserAr::find()->where(['username' => 'admin'])->one();
+        $user = UserModel::find()->where(['username' => 'admin'])->one();
         $auth->assign($admin,$user['id']);
 
         $this->echoLine('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');

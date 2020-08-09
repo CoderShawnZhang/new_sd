@@ -7,11 +7,8 @@
  */
 namespace Service\ServiceModules\ServiceUser\Models;
 
-use common\models\User;
 use Service\Ars\Tables\UserTable;
-use Service\ServiceModules\ServiceUser\Models\Ar\UserAr;
 use Service\ServiceModules\ServiceUser\Models\Ar\UserIdentity;
-use yii\db\ActiveRecord;
 
 /**
  * Class UserLoginModel

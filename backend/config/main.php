@@ -63,6 +63,9 @@ return [
         'Customer' => [
             'class' => 'backend\Modules\Customer\Module',
         ],
+        'User' => [
+            'class' => 'backend\Modules\User\Module',
+        ],
     ],
     'components' => [
         //css,js资源文件不进行缓存操作

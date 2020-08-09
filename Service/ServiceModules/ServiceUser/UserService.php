@@ -8,9 +8,8 @@
 
 namespace Service\ServiceModules\ServiceUser;
 
-use Service\ServiceModules\ServiceUser\Models\Ar\UserAr;
-use Service\ServiceModules\ServiceUser\Models\UserBaseModel;
 use Service\ServiceModules\ServiceUser\Models\UserLoginModel;
+use Service\ServiceModules\ServiceUser\Modules\CustomerServiceModule;
 
 /**
  * 对外调用服务层。
@@ -30,5 +29,13 @@ final class UserService
 
    public static function getUserModel(){
        return new UserLoginModel();
+   }
+
+    /**
+     * 获取客服列表
+     */
+   public static function getCustomerService()
+   {
+        return new CustomerServiceModule();
    }
 }

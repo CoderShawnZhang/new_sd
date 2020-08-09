@@ -7,8 +7,7 @@
  */
 namespace Service\ServiceOld;
 
-use common\models\User;
-use Service\ServiceBase\Constants\UserConstant;
+use Service\ServiceBase\Constants\CustomerConstant;
 use Service\ServiceOld\Models\OldCustomer;
 
 class OldUserService
@@ -46,64 +45,64 @@ class OldUserService
 
         $is_agent = OldCustomer::find()->where(['agent_ids' => $user_id])->one();
         if($userInfo['user_grade'] == 80 && $userInfo['user_authentication'] == 1 && !empty($is_agent)){
-            return UserConstant::USER_ROLE_IS_AGENT;
+            return CustomerConstant::USER_ROLE_IS_AGENT;
         }
         //代理商条件2
         if($userInfo['user_rank_id'] == 30 && ($userInfo['user_grade'] == 1 || $userInfo['user_grade'] == 2)){
-            return UserConstant::USER_ROLE_IS_AGENT;
+            return CustomerConstant::USER_ROLE_IS_AGENT;
         }
         //加盟商
         if($userInfo['user_grade'] == 80 && $userInfo['user_authentication'] == 1 && empty($is_agent)){
-            return UserConstant::USER_ROLE_IS_ALLIANCE;
+            return CustomerConstant::USER_ROLE_IS_ALLIANCE;
         }
         //合伙人
         if($userInfo['is_partners'] == 1){
-            return UserConstant::USER_ROLE_IS_PARTNER;
+            return CustomerConstant::USER_ROLE_IS_PARTNER;
         }
         //普通拿货（上级一定是代理）
         if($userInfo['user_authentication'] == 1 && $userInfo['user_grade'] != 80){
-            return UserConstant::USER_ROLE_IS_ENTITY;
+            return CustomerConstant::USER_ROLE_IS_ENTITY;
         }
         //合伙人客户（一定不是认证的）
         if($userInfo['is_partners'] == 0 && $userInfo['user_authentication'] == 0 && $userInfo['partnersid'] >0 && $userInfo['alliance_id'] > 0){
-            return UserConstant::USER_ROLE_IS_PARTNER_CUSTOMER;
+            return CustomerConstant::USER_ROLE_IS_PARTNER_CUSTOMER;
         }
         //未绑定
         if($userInfo['user_authentication'] == 0 && $userInfo['is_partners'] == 0 && $userInfo['partners_id'] ==0 && $userInfo['alliance_id'] == 0){
-            return UserConstant::USER_ROLE_IS_NONE;
+            return CustomerConstant::USER_ROLE_IS_NONE;
         }
-        return UserConstant::USER_ROLE_IS_OTHER;
+        return CustomerConstant::USER_ROLE_IS_OTHER;
     }
 
     private static function getUserPartnerFast($user_id,$role_id)
     {
         //代理
-        if($role_id == UserConstant::USER_ROLE_IS_AGENT){
+        if($role_id == CustomerConstant::USER_ROLE_IS_AGENT){
             return 0;
         }
         //加盟
-        if($role_id == UserConstant::USER_ROLE_IS_ALLIANCE){
+        if($role_id == CustomerConstant::USER_ROLE_IS_ALLIANCE){
             $userInfo = OldCustomer::find()->where(['user_id' => $user_id])->one();
             if($userInfo['agent_id'] > 0){
                 return $userInfo['agent_id'];
             }
         }
         //合伙人
-        if($role_id == UserConstant::USER_ROLE_IS_PARTNER){
+        if($role_id == CustomerConstant::USER_ROLE_IS_PARTNER){
             $userInfo = OldCustomer::find()->where(['user_id' => $user_id])->one();
             if($userInfo['partners_id'] > 0){
                 return $userInfo['partners_id'];
             }
         }
         //实体认证（上级一定是代理）
-        if($role_id == UserConstant::USER_ROLE_IS_ENTITY){
+        if($role_id == CustomerConstant::USER_ROLE_IS_ENTITY){
             $userInfo = OldCustomer::find()->where(['user_id' => $user_id])->one();
             if($userInfo['agent_id'] > 0){
                 return $userInfo['agent_id'];
             }
         }
         //合伙人客户
-        if($role_id == UserConstant::USER_ROLE_IS_PARTNER_CUSTOMER){
+        if($role_id == CustomerConstant::USER_ROLE_IS_PARTNER_CUSTOMER){
             $userInfo = OldCustomer::find()->where(['user_id' => $user_id])->one();
             if($userInfo['partnersid'] > 0){
                 return $userInfo['partnersid'];

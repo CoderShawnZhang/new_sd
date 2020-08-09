@@ -1,9 +1,6 @@
 <?php namespace Service\tests\Old;
 
-use Service\Ars\Tables\CustomerTable;
-use Service\ServiceBase\Constants\UserConstant;
-use Service\ServiceModules\ServiceCustomer\CustomerService;
-use Service\ServiceOld\Models\OldTestCustomer;
+use Service\ServiceBase\Constants\CustomerConstant;
 use Service\ServiceOld\OldUserPartnerFastService;
 
 /**
@@ -65,7 +62,7 @@ class checkRoleTest extends \Codeception\Test\Unit
                 [
                     //700000
                     'cur_user_id' => 700000,
-                    'cur_user_role' => UserConstant::USER_ROLE_IS_AGENT,
+                    'cur_user_role' => CustomerConstant::USER_ROLE_IS_AGENT,
                     'cur_user_partner_fast_uid' => 0,
                     'cur_user_partner_fast_role' => 0,
                     'cur_user_partner_last_uid' => 0,
@@ -76,7 +73,7 @@ class checkRoleTest extends \Codeception\Test\Unit
                 [
                     //700000
                     'cur_user_id' => 1029638,
-                    'cur_user_role' => UserConstant::USER_ROLE_IS_ALLIANCE,
+                    'cur_user_role' => CustomerConstant::USER_ROLE_IS_ALLIANCE,
                     'cur_user_partner_fast_uid' => 0,
                     'cur_user_partner_fast_role' => 0,
                     'cur_user_partner_last_uid' => 0,

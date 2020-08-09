@@ -25,7 +25,7 @@ use Yii;
  * @property int|null $is_address_transfer
  * @property int|null $is_store
  *
- * @property Customer $customer
+// * @property Customer $customer
  */
 class CustomerCommonTable extends \yii\db\ActiveRecord
 {
@@ -76,15 +76,6 @@ class CustomerCommonTable extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * Gets query for [[Customer]].
-     *
-     * @return \yii\db\ActiveQuery|\Service\Ars\Querys\CustomerQuery
-     */
-    public function getCustomer()
-    {
-//        return $this->hasOne(Customer::className(), ['id' => 'customer_id']);
-    }
 
     /**
      * {@inheritdoc}

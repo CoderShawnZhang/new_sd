@@ -8,8 +8,7 @@
  */
 
 namespace console\controllers\ProjectInit;
-
-use Service\ServiceModules\ServiceUser\Models\Ar\UserAr;
+use Service\ServiceModules\ServiceUser\Models\UserModel;
 
 
 /**
@@ -23,7 +22,7 @@ class InitUserAdminDataController extends \console\controllers\BaseController
      */
     public function actionRun()
     {
-        $user = new UserAr();
+        $user = new UserModel();
         if($user->load($this->getData(),'')){
            $res = $user->save();
            if($res){
