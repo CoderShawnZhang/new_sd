@@ -32,11 +32,11 @@ class CustomerServiceModule
      */
     public function getList()
     {
-        return $this->model->list();
+        return $this->model->getList();
     }
 
     public function getCount()
     {
-        return $this->model->count();
+        return $this->model->getCount();
     }
 }

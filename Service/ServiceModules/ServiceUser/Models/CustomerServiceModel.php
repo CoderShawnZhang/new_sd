@@ -22,12 +22,12 @@ class CustomerServiceModel extends UserModel
     /**
      * @return array|\Service\Ars\Tables\UserTable[]|UserModel[]
      */
-    public function list()
+    public function getList()
     {
         return self::find()->all();
     }
 
-    public function count()
+    public function getCount()
     {
         return self::find()->count();
     }
