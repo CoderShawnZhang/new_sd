@@ -9,8 +9,8 @@ namespace console\controllers\ProjectInit;
 
 use console\controllers\BaseController;
 use console\models\MenuAr;
-use Service\ServiceHelper\ConfigService;
-use Service\ServiceHelper\Models\Ar\ConfigAr;
+use Service\Helper\ConfigService;
+use Service\Helper\Models\Ar\ConfigAr;
 use yii\widgets\Menu;
 
 class InitMenuRawController extends BaseController

@@ -10,7 +10,7 @@ namespace backend\Modules\Orders\Controllers;
 
 
 use backend\controllers\BaseController;
-use Service\ServiceModules\ServiceUser\UserService;
+use Service\Modules\User\UserService;
 
 class UserOrderController extends BaseController
 {

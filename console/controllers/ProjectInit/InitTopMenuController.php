@@ -11,7 +11,7 @@ namespace console\controllers\ProjectInit;
 
 use console\controllers\BaseController;
 use console\models\MenuAr;
-use Service\ServiceHelper\Models\Ar\ConfigAr;
+use Service\Helper\Models\Ar\ConfigAr;
 
 class InitTopMenuController extends BaseController
 {

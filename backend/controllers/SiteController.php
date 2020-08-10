@@ -1,11 +1,10 @@
 <?php
 namespace backend\controllers;
 
-use Codeception\Command\Shared\Config;
 use console\models\MenuAr;
-use Service\ServiceHelper\ConfigService;
-use Service\ServiceHelper\Models\Ar\ConfigAr;
-use Service\ServiceModules\ServiceUser\UserService;
+use Service\Helper\ConfigService;
+use Service\Helper\Models\Ar\ConfigAr;
+use Service\Modules\User\UserService;
 use Yii;
 use yii\debug\models\search\Db;
 use yii\helpers\Html;

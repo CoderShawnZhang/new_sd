@@ -1,7 +1,7 @@
 <?php namespace Service\tests\Old;
 
-use Service\ServiceBase\Constants\CustomerConstant;
-use Service\ServiceOld\OldUserPartnerFastService;
+use Service\Base\Constants\CustomerConstant;
+use Service\Old\OldUserPartnerFastService;
 
 /**
  * 1检查用户角色

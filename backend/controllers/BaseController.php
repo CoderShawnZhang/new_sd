@@ -6,6 +6,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use common\models\LoginForm;
+use yii\web\Response;
 
 /**
  * 顶层基类
@@ -22,6 +23,14 @@ class BaseController extends Controller
         } else {
             $this->redirect(['site/index']);
         }
+    }
+
+    /**
+     *
+     */
+    public function formatJson()
+    {
+        \Yii::$app->response->format = Response::FORMAT_JSON;
     }
 
     /**

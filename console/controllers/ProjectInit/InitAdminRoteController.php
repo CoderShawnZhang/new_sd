@@ -9,8 +9,7 @@
 namespace console\controllers\ProjectInit;
 
 use console\controllers\BaseController;
-use Service\Ars\Tables\UserTable;
-use Service\ServiceModules\ServiceUser\Models\UserModel;
+use Service\Modules\User\Models\UserModel;
 
 /**
  * 初始化配置管理员角色权限

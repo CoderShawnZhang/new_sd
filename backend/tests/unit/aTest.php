@@ -1,7 +1,7 @@
 <?php
 namespace backend\tests\unit;
 
-use Service\ServiceModules\ServiceUser\UserService;
+use Service\Modules\User\UserService;
 
 class aTest extends \Codeception\Test\Unit
 {

@@ -8,8 +8,7 @@
 namespace backend\Modules\User\Controllers;
 
 use backend\controllers\BaseController;
-use Service\ServiceModules\ServiceUser\UserService;
-use yii\web\Response;
+use backend\Modules\User\Models\UserModel;
 
 /**
  * Class IndexController
@@ -17,23 +16,23 @@ use yii\web\Response;
  */
 class IndexController extends BaseController
 {
+    /**
+     * @return string
+     */
     public function actionIndex()
     {
         return $this->render('index');
     }
 
+    /**
+     * 获取客服列表
+     * @return array
+     */
     public function actionData()
     {
-        \Yii::$app->response->format = Response::FORMAT_JSON;
-
-        $customerService = UserService::getCustomerService();
-        $list = $customerService->getList();
-        $count = $customerService->getCount();
-        $dataArray = [];
-        foreach($list as $key => $val){
-            $dataArray[$key] = $val->toArray();
-            $dataArray[$key]['score'] = 100;
-        }
+        $this->formatJson();
+        $condition = ['username' => '蒋月月'];
+        list($dataArray,$count) = UserModel::getList($condition);
         return $this->layUiTableData($dataArray,$count,20);
     }
 }

@@ -2,9 +2,9 @@
 
 namespace backend\Modules\Login\Controllers;
 
-use Service\ServiceModules\ServiceUser\Models\UserBaseModel;
-use Service\ServiceModules\ServiceUser\Models\UserLoginModel;
-use Service\ServiceModules\ServiceUser\UserService;
+use Service\Modules\User\Models\UserBaseModel;
+use Service\Modules\User\Models\UserLoginModel;
+use Service\Modules\User\UserService;
 use yii\db\conditions\InCondition;
 use yii\web\Controller;
 use Yii;
@@ -17,7 +17,7 @@ class LoginController extends Controller
     public $layout = '@app/views/layouts/login.php';
 
     /**
-     * 登录
+     * 登录 [需要重构]
      */
     public function actionLogin()
     {

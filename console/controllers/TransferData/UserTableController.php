@@ -3,9 +3,9 @@ namespace console\controllers\TransferData;
 
 use console\controllers\BaseController;
 use Service\Exception\BaseException;
-use Service\ServiceModules\ServiceCustomer\CustomerService;
-use Service\ServiceModules\ServiceCustomer\Models\CustomerModel;
-use Service\ServiceOld\Models\OldCustomer;
+use Service\Modules\Customer\CustomerService;
+use Service\Modules\Customer\Models\CustomerModel;
+use Service\Old\Models\OldCustomer;
 use yii\helpers\ArrayHelper;
 
 /**

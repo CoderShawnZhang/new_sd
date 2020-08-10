@@ -8,7 +8,7 @@ return [
     'components' => [
         //加密解密的库【工具】
         'security' => [
-            'class' => 'Service\ServiceHelper\Security',
+            'class' => 'Service\Helper\Security',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',

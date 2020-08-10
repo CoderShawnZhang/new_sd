@@ -8,7 +8,7 @@
  */
 
 namespace console\controllers\ProjectInit;
-use Service\ServiceModules\ServiceUser\Models\UserModel;
+use Service\Modules\User\Models\UserModel;
 
 
 /**

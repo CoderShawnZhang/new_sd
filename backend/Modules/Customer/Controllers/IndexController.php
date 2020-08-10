@@ -8,9 +8,9 @@
 namespace backend\Modules\Customer\Controllers;
 
 use backend\controllers\BaseController;
-use Service\ServiceBase\Constants\CustomerMapping;
-use Service\ServiceHelper\UserService;
-use Service\ServiceModules\ServiceCustomer\Models\CustomerModel;
+use Service\Base\Constants\CustomerMapping;
+use Service\Helper\UserService;
+use Service\Modules\Customer\Models\CustomerModel;
 use yii\helpers\ArrayHelper;
 use yii\web\Response;
 

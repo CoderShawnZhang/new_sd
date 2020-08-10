@@ -2,8 +2,8 @@
 namespace backend\Modules\Goods\Controllers;
 
 use backend\controllers\BaseController;
-use Service\ServiceModules\ServiceUser\Models\Ar\IdentityaInterface;
-use Service\ServiceModules\ServiceUser\Models\Ar\UserIdentity;
+use Service\Modules\User\Models\Ar\IdentityaInterface;
+use Service\Modules\User\Models\Ar\UserIdentity;
 /**
  * Site controller
  */

@@ -30,7 +30,7 @@ return [
             'controllerMap' => [
 //                'menu' => [
 //                    'class' => 'mdm\admin\controllers\AssignmentController',
-//                    'userClassName' => 'Service\ServiceModules\ServiceUser\Models\Ar\UserAr',
+//                    'userClassName' => 'Service\Modules\User\Models\Ar\UserAr',
 //                    'idField' => 'id',
 //                    'usernameField' => 'name',
 //                    'extraColumns' => [
@@ -98,10 +98,10 @@ return [
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
-            'identityClass' => 'Service\ServiceModules\ServiceUser\Models\Ar\UserIdentity',
+            'identityClass' => 'Service\Modules\User\Models\Ar\UserIdentity',
             'enableAutoLogin' => false,
             'loginUrl' => '/Login/login/login',
-//            'identityClass' => 'Service\ServiceModules\ServiceUser\Models\Ar\UserIdentity',
+//            'identityClass' => 'Service\Modules\User\Models\Ar\UserIdentity',
 //            'enableAutoLogin' => true,
 //            'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
 //            'loginUrl' => '/Login/login/login',//默认跳转登录页

@@ -2,7 +2,7 @@
 
 namespace Service\Ars\Tables;
 
-use Service\ServiceModules\ServiceCustomer\Models\CustomerCommonModel;
+use Service\Modules\Customer\Models\CustomerCommonModel;
 use Yii;
 
 /**
