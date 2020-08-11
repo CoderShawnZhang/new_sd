@@ -23,7 +23,7 @@ abstract class SearchModel extends Model implements SearchModelInterface
     /**
      * @param string $fields
      */
-    public function setFields(string $fields = '*')
+    public function setFields($fields = '*')
     {
         $this->_fields = $fields;
     }

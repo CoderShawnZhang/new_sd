@@ -107,21 +107,36 @@
     </div>
 </div>
 
-
-<table class="layui-hide" id="test" lay-filter="customer_filter"></table>
+<div style="text-align: center;">
+    <div class="layui-inline layui_table_width_99">
+        <table class="layui-hide" id="customer_list" lay-filter="customer_filter"></table>
+    </div>
+</div>
 
 <script type="text/html" id="parentLevel1">
-    <div>{{d.parent_1_user_name}}-{{d.parent_level_1_txt}}</div>
+    {{# if(d.parent_1_user_name == '--'){  }}
+        <a href="#" style="color: red;text-decoration: underline;">手动绑定</a>
+    {{# }else{ }}
+        <div>{{d.parent_1_user_name}}-{{d.parent_level_1_txt}}</div>
+    {{# } }}
+</script>
+<script type="text/html" id="parentLevel2">
+    {{# if(d.parent_2_user_name == '--'){  }}
+    <a href="#" style="color: red;text-decoration: underline;">手动绑定</a>
+    {{# }else{ }}
+    <div>{{d.parent_2_user_name}}-{{d.parent_level_2_txt}}</div>
+    {{# } }}
 </script>
 <script type="text/html" id="auth">
-    <input type="checkbox" name="sex" value="{{d.is_auth}}" lay-skin="switch" lay-text="是|否" lay-filter="sexDemo">
+    <input type="checkbox" name="sex" value="{{d.is_auth}}" lay-skin="switch" lay-text="是|否" lay-filter="sex">
+</script>
+<script type="text/html" id="status">
+    <input type="checkbox" name="status" value="{{d.status}}" lay-skin="switch" lay-text="开启|禁用" lay-filter="status">
 </script>
 <script type="text/html" id="service">
     <div class="layui-badge layui-bg-orange">{{d.service_txt}}</div>
 </script>
-<script type="text/html" id="parentLevel2">
-    <div>{{d.parent_2_user_name}}-{{d.parent_level_2_txt}}</div>
-</script>
+
 <!--列表顶部操作组-->
 <script type="text/html" id="toolbarDemo">
     <div class="layui-btn-container">

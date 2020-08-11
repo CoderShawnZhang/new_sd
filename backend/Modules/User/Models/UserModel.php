@@ -27,8 +27,15 @@ class UserModel extends Model
         foreach($list as $key => $val) {
             /** @var $val UserTable */
             $dataArray[$key] = $val->toArray();
-            $dataArray[$key]['score'] = 100;
+            $dataArray[$key]['score'] = rand(1,10);//客服评分
+            $dataArray[$key]['customer_count'] = rand(1,9999);//客户量-通过模型关联获取
+            $dataArray[$key]['complaint_count'] = rand(1,9999);//投诉量-通过模型关联获取
+            $dataArray[$key]['satisfied_count'] = rand(1,9999);//满意度-通过模型关联获取
+            $dataArray[$key]['refund_count'] = rand(1,9999);//退款额-通过模型关联获取
+            $dataArray[$key]['week_sale_count'] = rand(1,9999);//周售额-通过模型关联获取
+            $dataArray[$key]['month_sale_count'] = rand(1,9999);//月售额-通过模型关联获取
+            $dataArray[$key]['year_sale_count'] = rand(1,9999);//年售额-通过模型关联获取
         }
-        return [$list,$count];
+        return [$dataArray,$count];
     }
 }

@@ -2,23 +2,23 @@
 layui.use('table', function(){
     var table = layui.table;
     table.render({
-        elem: '#test'
+        elem: '#customer_list'
         ,url: '/Customer/index/data/'
+        // ,height: 'full-80'
         ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
         ,page: true
         ,id: 'testReload'
-        // ,limits:[10,20,30]//切换当前页显示数量，默认10
-        ,toolbar: '#toolbarDemo' //开启头部工具栏，并为其绑定左侧模板
+        ,limits:[10,20,30]//切换当前页显示数量，默认10
         ,cols: [[
             {field:'user_name', width:180, title: '用户名', sort: true}
             ,{field:'c_id', width:120, title: 'ID'}
             ,{field:'is_auth', width:100, title: '是否认证',templet:'#auth'}
-            ,{field:'status', width:60, title: '状态'}
+            ,{field:'status', width:100, title: '状态',templet:"#status"}
             ,{field:'roleName', width:110, title: '角色'}
             ,{field:'parent_level_1', width:200, title: '上级',templet:'#parentLevel1'}
             ,{field:'parent_level_2', width:200, title: '上上级',templet:'#parentLevel2'}
             ,{field:'service', width:120, title: '客服',templet:'#service'}
-            ,{field:'created_at', width:140, title: '注册时间'}
+            ,{field:'created_at', width:170, title: '注册时间'}
             ,{field:'right',width:150,title:'操作',toolbar:'#barDemo'}
         ]]
     });

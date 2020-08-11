@@ -56,6 +56,8 @@ class IndexController extends BaseController
                 $dataArray[$key]['parent_2_user_name'] = $parent_level_2['user_name'];
                 $dataArray[$key]['parent_level_2_txt'] = $this->getRoleStyleHtml($parent_level_2['role']);
             }
+
+            $dataArray[$key]['created_at'] = date('Y-m-d H:i:s',$val['created_at']);
         }
         return $this->layUiTableData($dataArray,$count,$limit);
     }

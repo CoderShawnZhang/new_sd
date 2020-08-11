@@ -9,6 +9,8 @@ namespace backend\Modules\User\Controllers;
 
 use backend\controllers\BaseController;
 use backend\Modules\User\Models\UserModel;
+use Yii;
+use yii\helpers\ArrayHelper;
 
 /**
  * Class IndexController
@@ -26,13 +28,30 @@ class IndexController extends BaseController
 
     /**
      * 获取客服列表
+     *
      * @return array
+     * @throws \Exception
      */
     public function actionData()
     {
         $this->formatJson();
-        $condition = ['username' => '蒋月月'];
+        $condition = $this->getCondition();
         list($dataArray,$count) = UserModel::getList($condition);
         return $this->layUiTableData($dataArray,$count,20);
+    }
+
+    /**
+     * 获取查询条件
+     *
+     * @throws \Exception
+     */
+    private function getCondition()
+    {
+        $condition = [];
+        $get = Yii::$app->request->get();
+        if(!empty(ArrayHelper::getValue($get,'username',''))){
+            $condition[] = ['username' => $get['username']];
+        }
+        return $condition;
     }
 }

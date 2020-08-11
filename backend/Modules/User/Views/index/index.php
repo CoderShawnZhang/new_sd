@@ -2,95 +2,12 @@
     <div class="layui-colla-item">
         <h2 class="layui-colla-title" style="text-decoration: underline;color: red;">高级搜索</h2>
         <div class="layui-colla-content">
-            <form class="layui-form" action="">
+            <form class="layui-form" action="/User/index/data">
                 <div class="layui-form-item">
-                    <div class="layui-inline">
-                        <label class="layui-form-label">ID</label>
-                        <div class="layui-input-inline">
-                            <input type="number" name="user_id" class="layui-input">
-                        </div>
-                    </div>
                     <div class="layui-inline">
                         <label class="layui-form-label">用户名</label>
                         <div class="layui-input-inline">
                             <input type="text" name="email" autocomplete="off" class="layui-input">
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">上级ID</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="email" autocomplete="off" class="layui-input">
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">上上级ID</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="email" autocomplete="off" class="layui-input">
-                        </div>
-                    </div>
-                </div>
-                <div class="layui-form-item">
-                    <div class="layui-inline">
-                        <label class="layui-form-label">是否认证</label>
-                        <div class="layui-input-inline">
-                            <select name="modules" lay-search="">
-                                <option value="">直接选择或搜索选择</option>
-                                <option value="1">layer</option>
-                                <option value="2">form</option>
-
-                            </select>
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">用户角色</label>
-                        <div class="layui-input-inline">
-                            <select name="modules" lay-search="">
-                                <option value="">直接选择或搜索选择</option>
-                                <option value="1">layer</option>
-                                <option value="2">form</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">所属客服</label>
-                        <div class="layui-input-inline">
-                            <select name="modules" lay-search="">
-                                <option value="">直接选择或搜索选择</option>
-                                <option value="1">layer</option>
-                                <option value="2">form</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">是否有灯店</label>
-                        <div class="layui-input-inline">
-                            <select name="modules" lay-search="">
-                                <option value="">直接选择或搜索选择</option>
-                                <option value="1">layer</option>
-                                <option value="2">form</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="layui-form-item">
-                    <div class="layui-inline">
-                        <label class="layui-form-label">地区</label>
-                        <div class="layui-input-inline">
-                            <select name="modules" lay-search="">
-                                <option value="">直接选择或搜索选择</option>
-                                <option value="1">layer</option>
-                                <option value="2">form</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">最近登录</label>
-                        <div class="layui-input-inline">
-                            <select name="modules" lay-search="">
-                                <option value="">直接选择或搜索选择</option>
-                                <option value="1">layer</option>
-                                <option value="2">form</option>
-                            </select>
                         </div>
                     </div>
                 </div>
@@ -105,8 +22,16 @@
     </div>
 </div>
 
+<div style="text-align: center;">
+    <div class="layui-inline layui_table_width_99">
+        <table class="layui-hide" id="service_list"></table>
+    </div>
+</div>
 
-<table class="layui-hide" id="test"></table>
+
+<script type="text/html" id="start">
+    <div id="test9">123123</div>
+</script>
 
 <!--列表顶部操作组-->
 <script type="text/html" id="toolbarDemo">

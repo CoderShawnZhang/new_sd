@@ -14,3 +14,20 @@
 .layui-bg-nobind{
     background-color: #668B8B!important;
 }
+
+/*评分 五角星*/
+.layui-rate{
+    padding: 0;
+}
+
+/*表格头部工具栏,底部分野，左对齐*/
+.layui-table-tool,.layui-table-page{
+    text-align: left;
+}
+
+.layui_table_width_99{
+    width: 99%;
+}
+.layui_table_width_100{
+    width: 100%;
+}

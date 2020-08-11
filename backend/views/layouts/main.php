@@ -84,10 +84,6 @@ $appAsset = AppAsset::register($this);
          </div>
     </div>
 
-    <div class="layui-footer">
-        <!-- 底部固定区域 -->
-        ©搜灯V2.0---
-    </div>
 </div>
 
 </body>
