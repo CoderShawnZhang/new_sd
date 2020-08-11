@@ -42,7 +42,7 @@ iframe {
 
 .layui-tab-title .layui-this {
     background-color: #63B8FF;
-    color: #fff;
+    color: black;
 }
 
 
@@ -115,4 +115,7 @@ iframe {
 
 .left_icon{
     margin-left:5px;
+}
+.layui-tab-title li{
+    color: black;
 }
