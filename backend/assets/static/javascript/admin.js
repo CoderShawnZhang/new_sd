@@ -12,8 +12,19 @@ layui.use(['form','table'],function(){
         table = layui.table,
         $ = layui.jquery;
 
-
     $.form = new function(){
+        //绑定事件
+        this.on = function (elem,functionArray){
+            table.on(elem, function(obj){
+                // var data = obj.data;
+                functionArray.forEach(function(value){
+                    console.log('value',value.key);
+                    if(obj.event === value.key){
+                        value.event(obj);
+                    }
+                });
+            })
+        };
         //skin:
         // line （行边框风格）
         // row （列边框风格）
