@@ -39,7 +39,12 @@ class IndexController extends BaseController
         foreach($list as $key=>$val){
             $itemModel = $val;
             $dataArray[$key] = $val->toArray();
-            $dataArray[$key]['service_txt'] = $itemModel->customerCommon->service_id;
+            $service_name = '无';
+            if(!empty($itemModel->customerCommon->customerService)){
+                $service_name = $itemModel->customerCommon->customerService->user_name;
+            }
+            $dataArray[$key]['service_txt'] = $service_name;
+
             $dataArray[$key]['roleName'] = $this->getRoleStyleHtml($val['role']);
             $dataArray[$key]['is_auth_txt'] = $val['is_auth'] == 1 ? '已认证' : '未认证';
             $parent_level_1 =  CustomerModel::find()->where(['c_id'=>$val['parent_level_1']])->one();

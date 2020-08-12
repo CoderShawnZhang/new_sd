@@ -13,5 +13,8 @@ use Service\Ars\Tables\CustomerCommonTable;
 
 class CustomerCommonModel extends CustomerCommonTable
 {
-
+    public function getCustomerService()
+    {
+        return $this->hasOne(CustomerModel::className(),['c_id'=>'service_id']);
+    }
 }

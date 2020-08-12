@@ -134,7 +134,11 @@
     <input type="checkbox" name="status" value="{{d.status}}" lay-skin="switch" lay-text="开启|禁用" lay-filter="status">
 </script>
 <script type="text/html" id="service">
-    <div class="layui-badge layui-bg-orange">{{d.service_txt}}</div>
+    {{# if(d.service_txt == '无'){ }}
+        <div class="layui-badge layui-bg-black">{{d.service_txt}}</div>
+    {{# }else{ }}
+        <div class="layui-badge layui-bg-orange">{{d.service_txt}}</div>
+    {{# } }}
 </script>
 
 <!--列表顶部操作组-->
