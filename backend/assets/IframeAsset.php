@@ -22,7 +22,8 @@ class IframeAsset extends AssetBundle
     ];
     public $js = [
         'javascript/jquery.min.js',
-        'layui/layui.all.js'
+        'layui/layui.all.js',
+        'javascript/admin.js'
     ];
     public $depends = [
 //         'yii\web\YiiAsset',

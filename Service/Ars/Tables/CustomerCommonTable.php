@@ -45,7 +45,7 @@ class CustomerCommonTable extends \yii\db\ActiveRecord
         return [
             [['customer_id', 'order_buy_money'], 'required'],
             [['customer_id', 'service_id', 'order_count', 'is_year_buy', 'status', 'last_login_time', 'last_buy_time', 'is_address_transfer', 'is_store'], 'integer'],
-            [['order_buy_money', 'order_refund_money', 'this_month_buy_money', 'last_month_buy_money', 'three_month_buy_money', 'is_three_money_buy', 'is_three_month_not_buy'], 'number'],
+            [['order_buy_money', 'order_refund_money', 'this_month_buy_money', 'last_month_buy_money', 'three_month_buy_money', 'is_three_money_buy'], 'number'],
 //            [['customer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Customer::className(), 'targetAttribute' => ['customer_id' => 'id']],
         ];
     }
@@ -66,7 +66,6 @@ class CustomerCommonTable extends \yii\db\ActiveRecord
             'last_month_buy_money' => 'Last Month Buymoney',
             'three_month_buy_money' => 'Three Month Buymoney',
             'is_three_money_buy' => 'Is Three Money Buy',
-            'is_three_month_not_buy' => 'Is Three Month Notbuy',
             'is_year_buy' => 'Is Year Buy',
             'status' => 'Status',
             'last_login_time' => 'Last Login Time',

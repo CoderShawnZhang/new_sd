@@ -48,7 +48,7 @@ class CustomerTable extends \yii\db\ActiveRecord
     {
         return [
             [['user_name', 'password', 'role', 'access_token', 'created_at'], 'required'],
-            [['role', 'c_id','parent_level_1', 'parent_level_2', 'last_login_at', 'on_line', 'status', 'created_at', 'updated_at'], 'integer'],
+            [['role', 'c_id','parent_level_1', 'parent_level_2', 'on_line', 'status', 'created_at', 'updated_at'], 'integer'],
             [['return_money_ratio'], 'number'],
             [['user_name', 'password', 'email'], 'string', 'max' => 45],
             [['access_token'], 'string', 'max' => 100],
@@ -71,7 +71,6 @@ class CustomerTable extends \yii\db\ActiveRecord
             'parent_level_1' => 'Parent Level 1',
             'parent_level_2' => 'Parent Level 2',
             'return_money_ratio' => '返现比率(百分比)',
-            'last_login_at' => 'Last Login At',
             'on_line' => 'On Line',
             'status' => 'Status',
             'access_token' => 'Access Token',

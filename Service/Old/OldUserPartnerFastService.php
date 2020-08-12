@@ -11,8 +11,16 @@ namespace Service\Old;
 
 use Service\Base\Constants\CustomerMapping;
 
+/**
+ * Class OldUserPartnerFastService
+ * @package Service\Old
+ */
 class OldUserPartnerFastService
 {
+    /**
+     * @param $cur_user_id
+     * @return array
+     */
     public static function getPartnerFastRole($cur_user_id)
     {
         list($role_id,$partner_fast) = OldUserService::getUserRole($cur_user_id);

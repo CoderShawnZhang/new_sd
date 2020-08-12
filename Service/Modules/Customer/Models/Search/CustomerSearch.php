@@ -9,8 +9,15 @@ namespace Service\Modules\Customer\Models\Search;
 
 use Service\Base\SearchModel;
 
+/**
+ * Class CustomerSearch
+ * @package Service\Modules\Customer\Models\Search
+ */
 class CustomerSearch extends SearchModel
 {
+    /**
+     *
+     */
     public function setCondition()
     {
         // TODO: Implement setCondition() method.

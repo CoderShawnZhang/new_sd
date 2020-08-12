@@ -17,11 +17,24 @@ use Service\Modules\User\Models\Ar\UserIdentity;
  */
 class UserLoginModel extends UserTable
 {
+    /**
+     *
+     */
     const ACCOUNT_TYPE_DISABLE =  0;//账号不允许登录类型
+
+    /**
+     * @var bool
+     */
     public $rememberMe = true;
 
+    /**
+     * @var null
+     */
     private $_userInfo = null;
 
+    /**
+     * @return array
+     */
     public function rules()
     {
         return [
@@ -32,6 +45,9 @@ class UserLoginModel extends UserTable
         ];
     }
 
+    /**
+     * @return array
+     */
     public function attributeLabels()
     {
         return [
@@ -50,6 +66,9 @@ class UserLoginModel extends UserTable
         return $scenarios;
     }
 
+    /**
+     * @param $attribute
+     */
     public function validatePassword($attribute)
     {
         if (!$this->hasErrors()) {

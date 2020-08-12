@@ -12,6 +12,10 @@ use Service\Ars\Tables\UserTable;
 use Service\Modules\User\Models\Querys\UserQuery;
 use Service\Modules\User\Models\Search\UserSearch;
 
+/**
+ * Class UserModel
+ * @package Service\Modules\User\Models
+ */
 class UserModel extends UserTable
 {
 

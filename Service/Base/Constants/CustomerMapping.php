@@ -11,14 +11,14 @@ namespace Service\Base\Constants;
 
 class CustomerMapping
 {
+
     /**
-     * 获取客户角色
-     * @param $roleId
-     * @return mixed|string
+     * 获取系统所有角色列表
+     * @return array
      */
-    public static function getUserRoleName($roleId)
+    public static function getCustomerRoleList()
     {
-        $roleArray = [
+        return [
             CustomerConstant::USER_ROLE_IS_AGENT=>CustomerConstant::USER_ROLE_TXT_AGENT,
             CustomerConstant::USER_ROLE_IS_ALLIANCE=>CustomerConstant::USER_ROLE_TXT_ALLIANCE,
             CustomerConstant::USER_ROLE_IS_PARTNER => CustomerConstant::USER_ROLE_TXT_PARTNER,
@@ -28,6 +28,15 @@ class CustomerMapping
             CustomerConstant::USER_ROLE_IS_OTHER => CustomerConstant::USER_ROLE_TXT_OTHER,
             0 => '无'
         ];
+    }
+    /**
+     * 获取客户角色
+     * @param $roleId
+     * @return mixed|string
+     */
+    public static function getUserRoleName($roleId)
+    {
+        $roleArray = self::getCustomerRoleList();
         return isset($roleArray[$roleId]) ? $roleArray[$roleId] : '';
     }
 }

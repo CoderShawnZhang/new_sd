@@ -31,6 +31,9 @@ class CustomerModel extends UserModel
         return self::find()->all();
     }
 
+    /**
+     * @return int|string
+     */
     public function getCount()
     {
         return self::find()->count();

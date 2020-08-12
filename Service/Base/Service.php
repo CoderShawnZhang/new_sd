@@ -13,6 +13,10 @@ use yii\base\Component;
 abstract class Service extends Component implements ServiceInterface
 {
 
+    /**
+     * 实现接口，供子类重写
+     * @return mixed|void
+     */
     public static function getSearchClass()
     {
         // TODO: Implement getSearchClass() method.

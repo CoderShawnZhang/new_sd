@@ -95,13 +95,19 @@
                             </select>
                         </div>
                     </div>
-                </div>
-                <div class="layui-form-item">
-                    <div class="layui-input-block">
-                        <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">搜索</button>
-                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+
+                    <div class="layui-inline">
+                        <div class="layui-input-inline">
+                            <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">搜索</button>
+                        </div>
                     </div>
                 </div>
+<!--                <div class="layui-form-item">-->
+<!--                    <div class="layui-input-block">-->
+<!--                        <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">搜索</button>-->
+<!--                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>-->
+<!--                    </div>-->
+<!--                </div>-->
             </form>
         </div>
     </div>
@@ -109,7 +115,7 @@
 
 <div style="text-align: center;">
     <div class="layui-inline layui_table_width_99">
-        <table class="layui-hide" id="customer_list" lay-filter="customer_filter"></table>
+        <table class="layui-hide" id="customer_list_table" lay-filter="customer_filter"></table>
     </div>
 </div>
 
@@ -142,7 +148,7 @@
 </script>
 
 <!--列表顶部操作组-->
-<script type="text/html" id="toolbarDemo">
+<script type="text/html" id="customer_list_toolbar">
     <div class="layui-btn-container">
         <button class="layui-btn layui-btn-sm" lay-event="click_event">显示更多</button>
         <button class="layui-btn layui-btn-sm" lay-event="click_event">操作按钮</button>

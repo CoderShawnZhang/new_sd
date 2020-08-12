@@ -15,15 +15,13 @@ class CustomerService extends Service
 {
     use TransOldDb;
 
+    /**
+     *
+     */
     public static function search()
     {
         //策略模式选择哪个模型查询
         $model = new CustomerModel();
         return $model->search();
-    }
-
-    public static function getSearchClass()
-    {
-        // TODO: Implement getSearchClass() method.
     }
 }

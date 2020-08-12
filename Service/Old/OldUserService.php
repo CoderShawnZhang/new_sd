@@ -10,6 +10,10 @@ namespace Service\Old;
 use Service\Base\Constants\CustomerConstant;
 use Service\Old\Models\OldCustomer;
 
+/**
+ * Class OldUserService
+ * @package Service\Old
+ */
 class OldUserService
 {
     /**
@@ -74,6 +78,11 @@ class OldUserService
         return CustomerConstant::USER_ROLE_IS_OTHER;
     }
 
+    /**
+     * @param $user_id
+     * @param $role_id
+     * @return int|mixed
+     */
     private static function getUserPartnerFast($user_id,$role_id)
     {
         //代理

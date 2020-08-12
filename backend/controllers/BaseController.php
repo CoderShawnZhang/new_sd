@@ -41,15 +41,16 @@ class BaseController extends Controller
      */
     public function layUiTableData($dataArray,$count,$limit = 20)
     {
+        empty($dataArray) ? $msg = '暂无数据！' : $msg = '查询成功！';
         $pageInfo = [
             'limit' => $limit,
             'page_current' => 1,
-            'page_num' => $count/$limit
+            'page_num' => ceil($count / $limit)
         ];
         return $list = [
             'code'  => 0,
-            'msg'   => '',
-            'count' => $count/2,
+            'msg'   => $msg,
+            'count' => $count,
             'info'  => $pageInfo,
             'data'  => $dataArray,
         ];

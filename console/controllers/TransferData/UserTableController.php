@@ -2,9 +2,12 @@
 namespace console\controllers\TransferData;
 
 use console\controllers\BaseController;
+use Service\Base\Constants\CustomerConstant;
+use Service\Base\Constants\CustomerMapping;
 use Service\Exception\BaseException;
 use Service\Modules\Customer\CustomerService;
 use Service\Modules\Customer\Models\CustomerModel;
+use Service\Modules\Customer\Models\CustomerRoleModel;
 use Service\Old\Models\OldCustomer;
 use yii\helpers\ArrayHelper;
 
@@ -14,6 +17,9 @@ use yii\helpers\ArrayHelper;
 class UserTableController extends BaseController
 {
 
+    /**
+     * @return array
+     */
     private function getWhere()
     {
         $user_ids =  CustomerModel::find()->all();
@@ -22,22 +28,44 @@ class UserTableController extends BaseController
         }
         return ['not in','user_id',ArrayHelper::getColumn($user_ids,'c_id')];
     }
+
+    /**
+     * 初始化角色表
+     */
+    private function initRoleData()
+    {
+        $roleList = CustomerMapping::getCustomerRoleList();
+        foreach($roleList as $key => $val){
+            $find = CustomerRoleModel::find()->where(['id' => $key])->one();
+            if(!empty($find)){
+                continue;
+            }
+            $model = new CustomerRoleModel();
+            $insertData = [
+                'id' => $key,
+                'name' => $val,
+                'status' => 1
+            ];
+            if(!$model->load($insertData,'') || !$model->validate()){
+                var_dump($model->getErrors());die;
+            }
+            if(!$model->save()){
+                var_dump($model->getErrors());die;
+            }
+            $this->echoLine('创建角色:【' . $val . '】成功');
+        }
+    }
+
     /**
      * php yii TransferData/user-table/index
      * 测试结构！
      */
     public function actionIndex()
     {
+        $this->initRoleData();
         ini_set('memory_limit', -1);
-//        var_dump($this->getWhere());die;
-//        CustomerService::transDataCustomer(123);
-//        $user_id = 1033644;
         $model = OldCustomer::find()->where($this->getWhere());
-//        var_dump($model->createCommand()->getRawSql());die;
-//        $list = $model->where(['in','user_id',[1033881,1033889,1033861,1029638]])->all();
         $list = $model->orderBy('user_id asc')->limit(500)->all();
-//        $list = $model->where(['in','user_id',[800089]])->all();
-//        $trans = \Yii::$app->db->beginTransaction();
         try{
             if($model->count() == 0){
                 throw new BaseException('异常信息',1001);
@@ -45,10 +73,8 @@ class UserTableController extends BaseController
             foreach($list as $key => $val){
                 CustomerService::transDataCustomer($val['user_id']);
             }
-//            $trans->commit();
         } catch (\Exception $e){
             var_dump($e->getMessage());
-//            $trans->rollBack();
         }
     }
 }

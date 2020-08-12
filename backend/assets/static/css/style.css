@@ -19,7 +19,7 @@ iframe {
     margin:0;
 }
 .clildFrame.layui-tab-content{
-    top: 40px;
+    top: 41px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -118,4 +118,9 @@ iframe {
 }
 .layui-tab-title li{
     color: black;
+}
+
+
+.layui-layout-admin .layui-body{
+    bottom: 0;
 }
