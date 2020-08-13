@@ -96,7 +96,7 @@ iframe {
 }
 
 /*左侧导航*/
-.hideMenu:hover,.showMenu:hover{ color:#fff; }
+.hideMenu:hover,.showMenu:hover{ color:black; }
 .showMenu.layui-layout-admin .layui-side{ left:-200px; }
 .showMenu .layui-body,.showMenu .layui-footer{ left:0; }
 
@@ -115,9 +115,11 @@ iframe {
 
 .left_icon{
     margin-left:5px;
+    font-size:10px;/*小一号*/
 }
 .layui-tab-title li{
     color: black;
+    font-size:10px;/*小一号*/
 }
 
 

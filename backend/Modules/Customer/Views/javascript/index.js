@@ -1,5 +1,5 @@
 
-var cols = [[
+var columns = [
     {field:'user_name', width:180, title: '用户名', sort: true},
     {field:'c_id', width:120, title: 'ID'},
     {field:'is_auth', width:100, title: '是否认证',templet:'#auth'},
@@ -10,32 +10,40 @@ var cols = [[
     {field:'service', width:120, title: '客服',templet:'#service',sort: true},
     {field:'created_at', width:170, title: '注册时间'},
     {field:'right',width:150,title:'操作',toolbar:'#barDemo'}
-]];
+];
+
 //渲染数据表
-$.form.table('customer_list','/Customer/index/data/',cols,true);
+$.form.table('customer_list','/Customer/index/data/',columns,true);
 
 //监听行工具事件
 var functionArray = [
-        {'key':'edit','event':function(rowObj){
-            click_edit(rowObj);
-        }},
-        {'key':'del','event' :function(rowObj){
-            click_del(rowObj);
-        }}
-    ];
+    {'key':'edit','event':function(rowObj){
+        click_edit(rowObj);
+    }},
+    {'key':'del','event' :function(rowObj){
+        click_del(rowObj);
+    }}
+];
 
-function click_edit()
+/**
+ * 点击编辑
+ *
+ * @param rowObj {Object}
+ * @param rowObj.data {Object}
+ * @param rowObj.data.user_name {String}
+ */
+function click_edit(rowObj)
 {
     layer.open({
         type: 2
-        , title: '封装'
+        , title: rowObj.data.user_name
         , area: ['80%', '100%']
         , shade: 0
         , maxmin: true
         , content: '/Customer/index/edit'
         , btn: ['确定', '关闭'] //只是为了演示
         , yes: function () {
-            layer.msg('不111开心。。', {icon: 5});
+            $.msg.alert('aaaaa',1);
         }
         ,btn2: function(){
             layer.msg('不555开心。。', {icon: 5});
@@ -45,6 +53,11 @@ function click_edit()
         }
     });
 }
+
+/**
+ * 点击删除
+ * @param rowObj
+ */
 function click_del(rowObj)
 {
     layer.confirm('真的删除1123123行么', function(index){

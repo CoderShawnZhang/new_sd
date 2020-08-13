@@ -1,17 +1,23 @@
 
-//左侧列表
-// $(".layui-nav-item").on('click',function(){
-//     var active = 'layui-nav-itemed';
-//    $(this).addClass(active).siblings('li').removeClass(active);
-// });
-
-
-
 layui.use(['form','table'],function(){
-    var form = layui.form,
-        table = layui.table,
-        $ = layui.jquery;
+    var table = layui.table, $ = layui.jquery;
 
+    $.msg = new function () {
+        this.dialogIndexs = [];
+        this.alert = function (msg,params) {
+            var typeOf = typeof(params);
+            var index;
+            if(typeOf === 'undefined') {
+                index = layer.alert(msg, {end: params, scrollbar: false});
+                return this.dialogIndexs.push(index), index;
+            }
+            if(typeOf === "number") {
+                //0:橘黄色惊叹号，1:绿色对号，2:红色圆圈中间叉，3:黄色圆圈中间问号，4:灰色圆圈中间锁头,5:红色圆圈中间哭脸,6:绿色圆圈中间笑脸
+                index = layer.alert(msg,{icon: params});
+                return this.dialogIndexs.push(index), index;
+            }
+        };
+    };
     $.form = new function(){
         //绑定事件
         this.on = function (elem,functionArray){
@@ -41,7 +47,7 @@ layui.use(['form','table'],function(){
                     limit: 500,
                     toolbar:false,
                     id: elem + 'TableId',
-                    cols: cols
+                    cols: [cols]
                 };
             } else {
                  data = {
@@ -61,14 +67,13 @@ layui.use(['form','table'],function(){
                     limit: 15,
                     toolbar: false,
                     id: elem + 'TableId',
-                    cols: cols,
+                    cols: [cols],
                 };
             }
-            if (skin != '') data.skin = skin;
-            if (size != '') data.size = size;
-            if (size == 'lg') data.limit = 8;
-            if (limi != '') data.limit = limi;
-
+            if (skin !== '') data.skin = skin;
+            if (size !== '') data.size = size;
+            if (size === 'lg') data.limit = 8;
+            if (limi !== '') data.limit = limi;
             if (!isTool){
                 data.height = "full";
             } else {
@@ -76,5 +81,5 @@ layui.use(['form','table'],function(){
             }
             table.render(data);
         }
-    }
+    };
 });

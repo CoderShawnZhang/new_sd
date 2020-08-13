@@ -121,14 +121,14 @@
 
 <script type="text/html" id="parentLevel1">
     {{# if(d.parent_1_user_name == '--'){  }}
-        <a href="#" style="color: red;text-decoration: underline;">手动绑定</a>
+        <a href="#" style="color: black;text-decoration: underline;">手动绑定</a>
     {{# }else{ }}
         <div>{{d.parent_1_user_name}}-{{d.parent_level_1_txt}}</div>
     {{# } }}
 </script>
 <script type="text/html" id="parentLevel2">
     {{# if(d.parent_2_user_name == '--'){  }}
-    <a href="#" style="color: red;text-decoration: underline;">手动绑定</a>
+    <a href="#" style="color: black;text-decoration: underline;">手动绑定</a>
     {{# }else{ }}
     <div>{{d.parent_2_user_name}}-{{d.parent_level_2_txt}}</div>
     {{# } }}
@@ -143,7 +143,7 @@
     {{# if(d.service_txt == '无'){ }}
         <div class="layui-badge layui-bg-black">{{d.service_txt}}</div>
     {{# }else{ }}
-        <div class="layui-badge layui-bg-orange">{{d.service_txt}}</div>
+        <div class="layui-badge layui-bg-blue">{{d.service_txt}}</div>
     {{# } }}
 </script>
 
