@@ -46,9 +46,12 @@
 /*重写按钮大小颜色*/
 .layui-btn{
     font-size: 10px;
-    background-color: #63B8FF;
+    /*background-color: #63B8FF;*/
     height: 28px;
     line-height: 28px;
+}
+.layui-bg-skin {
+    background-color: #63B8FF;
 }
 /*重写内部子按钮danger*/
 .layui-btn-danger {
@@ -72,4 +75,19 @@
 
 .layui-table-view .layui-table td, .layui-table-view .layui-table th {
     padding: 2px 0;
+}
+
+/*弹框，边框颜色*/
+.layui-layer .layui-layer-iframe .layui-layer-border{
+    border:1px solid gray;
+}
+
+
+/*表单左侧宽度*/
+.layui-form-pane .layui-form-label{
+    width: 130px;
+    text-align:right;
+}
+.layui-form-pane .layui-input-block{
+    margin-left:130px;
 }

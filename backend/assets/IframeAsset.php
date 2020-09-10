@@ -18,12 +18,14 @@ class IframeAsset extends AssetBundle
     public $sourcePath = '@backend/assets/static';
     public $css = [
         'layui/css/layui.css',
-        'css/iframe_style.css'
+        'css/iframe_style.css',
+        'css/jquery.jsonview.css'
     ];
     public $js = [
         'javascript/jquery.min.js',
         'layui/layui.all.js',
-        'javascript/admin.js'
+        'javascript/admin.js',
+        'javascript/jquery.jsonview.js'
     ];
     public $depends = [
 //         'yii\web\YiiAsset',

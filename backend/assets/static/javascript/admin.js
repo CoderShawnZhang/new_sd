@@ -1,7 +1,7 @@
 
 layui.use(['form','table'],function(){
     var table = layui.table, $ = layui.jquery;
-
+    var form = layui.form;
     $.msg = new function () {
         this.dialogIndexs = [];
         this.alert = function (msg,params) {
@@ -31,18 +31,19 @@ layui.use(['form','table'],function(){
                 });
             })
         };
+
         //skin:
         // line （行边框风格）
         // row （列边框风格）
         // nob （无边框风格
-        this.table = function (elem, url, cols, isTool = false, isPage = true, skin = '', size = '',limi='') {
+        this.table = function (elem, url, cols, isTool = false, isPage = true, height = 'full-80',skin = '', size = '',limi='') {
             var data = {};
             if(!isPage){
                  data = {
                     elem: '#' + elem + '_table',
                     url: url,
                     cellMinWidth: 95,
-                    height: "full-80",
+                    height: height,
                     limits: [500],
                     limit: 500,
                     toolbar:false,
@@ -62,7 +63,7 @@ layui.use(['form','table'],function(){
                         ,next: '下一页'
                         ,groups:10
                     },
-                    height: "full-80",
+                    height: height,
                     limits: [10, 15, 20, 25, 50, 100],
                     limit: 15,
                     toolbar: false,
@@ -75,7 +76,7 @@ layui.use(['form','table'],function(){
             if (size === 'lg') data.limit = 8;
             if (limi !== '') data.limit = limi;
             if (!isTool){
-                data.height = "full";
+                data.height = "full-160";
             } else {
                 data.toolbar = '#' + elem + '_toolbar';
             }

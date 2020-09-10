@@ -8,7 +8,7 @@
 namespace backend\Modules\User\Controllers;
 
 use backend\controllers\BaseController;
-use backend\Modules\User\Models\UserModel;
+use backend\Modules\User\Models\SelfUserModel;
 use Yii;
 use yii\helpers\ArrayHelper;
 
@@ -36,7 +36,7 @@ class IndexController extends BaseController
     {
         $this->formatJson();
         $condition = $this->getCondition();
-        list($dataArray,$count) = UserModel::getList($condition);
+        list($dataArray,$count) = SelfUserModel::getList($condition);
         return $this->layUiTableData($dataArray,$count,20);
     }
 

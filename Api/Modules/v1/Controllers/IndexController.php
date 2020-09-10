@@ -1,7 +1,10 @@
 <?php
 namespace Api\Modules\v1\Controllers;
 
-use yii\web\Controller as BaseController;
+use Api\Controllers\BaseController;
+use Service\Modules\User\UserService;
+use yii\filters\Cors;
+use yii\web\Response;
 
 /**
  * Site controller
@@ -9,20 +12,43 @@ use yii\web\Controller as BaseController;
 class IndexController extends BaseController
 {
 	public $modelClass = 'Api\Modules\v1\Models\Order';
-	
-    public function actionIndex()
+    public function behaviors()
+    {
+        return [
+            'corsFilter'=>[
+                'class' => Cors::className(),
+                'cors'=>[
+                    'Access-Control-Allow-Credentials' => false,
+                    'Origin' => ['*'],
+                ]
+            ]
+        ];
+    }
+    public function actionAbc()
 	{
-
-	    $a = 1;
-	    $b = 2;
-	    $c = $a+$b;
-		var_dump(2222);die;
+	    \Yii::$app->response->format = Response::FORMAT_JSON;
+	    $result = [
+	        'a' => 123,'b'=>123
+        ];
+	    $result = UserService::searchAll();
+		return $result;
 	}
+    public function actionAbc1()
+    {
+        \Yii::$app->response->format = Response::FORMAT_JSON;
+        $result = [
+            'a' => 666,'b'=>777
+        ];
+        return $result;
+    }
 
-	public function actionTest()
-	{
-		$res = shell_exec("cd /data/wwwroot/dengbei && git pull origin master");
-		print_r($res);
-		// var_dump(111);die;
-	}
+	public function actionLogin()
+    {
+        \Yii::$app->response->format = Response::FORMAT_JSON;
+        $result = [
+            'a' => 123,'b'=>123
+        ];
+
+        return $result;
+    }
 }

@@ -22,7 +22,6 @@ class IndexController extends BaseController
      */
     public function actionIndex()
     {
-
         $selected_id = ConfigService::getTopInitMenu();
         $list = MenuService::getTopMenuList();
         return $this->render('index',['list' => $list,'selected_id'=> $selected_id]);

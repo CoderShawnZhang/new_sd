@@ -32,10 +32,11 @@ return [
          */
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=mysql;dbname=bdw;port=3306',
+            'dsn' => 'mysql:host=mysql;dbname=dengbei;port=3306',
             'username' => 'root',
             'password' => '123456',
             'charset' => 'utf8',
+            'tablePrefix' => 'sd_'
         ],
     ],
     'defaultRoute' => 'base',

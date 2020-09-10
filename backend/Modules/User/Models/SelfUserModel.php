@@ -11,7 +11,7 @@ use Service\Ars\Tables\UserTable;
 use Service\Modules\User\UserService;
 use yii\base\Model;
 
-class UserModel extends Model
+class SelfUserModel extends Model
 {
     /**
      * 获取客服列表
