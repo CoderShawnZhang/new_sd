@@ -30,7 +30,7 @@ class IndexController extends BaseController
 	    $result = [
 	        'a' => 123,'b'=>123
         ];
-	    $result = UserService::searchAll();
+	    // $result = UserService::searchAll();
 		return $result;
 	}
     public function actionAbc1()

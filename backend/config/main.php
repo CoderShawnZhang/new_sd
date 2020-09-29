@@ -68,6 +68,9 @@ return [
         ],
         'Api' => [
             'class' => 'backend\Modules\Api\Module',
+        ],
+        'Swoole' => [
+            'class' => 'backend\Modules\Swoole\Module'
         ]
     ],
     'components' => [
